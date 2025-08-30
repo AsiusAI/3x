@@ -10,5 +10,9 @@ git submodule update --init --recursive
 
 ```
 cd armbian-build
-./compile.sh BOARD=orangepi5-ultra RELEASE=noble BUILD_MINIMAL=yes BRANCH=vendor NETWORKING_STACK="network-manager" USER_NAME=asius USER_PASSWORD=asius ROOTPWD=asius
+mkdir userpatches && cp ../custom.sh userpatches/custom.sh
+
+./compile.sh BOARD=orangepi5-ultra RELEASE=noble BUILD_MINIMAL=yes BRANCH=vendor NETWORKING_STACK="network-manager"
+
+sudo dd if=output/images/Armbian-unofficial_25.11.0-trunk_Orangepi5-ultra_noble_vendor_6.1.115_minimal.img of=/dev/sda bs=4M status=progress conv=fsync
 ```
