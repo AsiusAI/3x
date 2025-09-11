@@ -1,15 +1,15 @@
-## 硬件安装
+## Hardware Setup
 ![](pic/org-pi.jpg)
 
-## 下载安装镜像（ubuntu2404）
+## Download and Install Image (Ubuntu 24.04)
 https://github.com/Joshua-Riek/ubuntu-rockchip
 
-点击下面链接直接下载香橙派5的
+Click the link below to download the Orange Pi 5 image directly:
 [https://github.com/Joshua-Riek/ubuntu-rockchip/releases/download/v2.4.0/ubuntu-24.04-preinstalled-desktop-arm64-orangepi-5.img.xz](https://github.com/Joshua-Riek/ubuntu-rockchip/releases/download/v2.4.0/ubuntu-24.04-preinstalled-desktop-arm64-orangepi-5.img.xz)
 
-## 以下在香橙派5ubuntu2404环境下操作
+## The following steps are for Orange Pi 5 with Ubuntu 24.04
 
-## 先解压文件夹到home目录
+## First, extract the folder to the home directory
 ```bash
 mv imx415.zip ~/
 cd ~
@@ -17,47 +17,48 @@ unzip imx415.zip
 cd ~/imx415/
 ```
 
-## 备份dtb文件
+## Back up dtb file
 ```bash
 cd /usr/lib/firmware/6.1.0-1025-rockchip/device-tree/rockchip/
 ls | grep rk3588s-orangepi-5
 sudo cp rk3588s-orangepi-5.dtb rk3588s-orangepi-5.dtb.bak
 ```
 
-## 替换dtb文件
+## Replace dtb files
 ```bash
-# dts所在目录
+# dts directory
 cd /usr/lib/firmware/6.1.0-1025-rockchip/device-tree/rockchip/
-# 替换总的dts，里面包含了camera的更改，目前更改占用的ov13855; 如果以后还使用ov13855,只需要把这一个文件替换回去就行
+# Replace the main dtb that includes camera changes; currently overrides ov13855.
+# If you need to use ov13855 later, simply restore this single file.
 sudo cp ~/imx415/dts/rk3588s-orangepi-5.dtb ./
-# imx415的dts，拷贝过去后不要更改
+# imx415 dtbo overlays; copy over and do not modify
 sudo cp ~/imx415/dts/orangepi-5-imx415-c* ./overlay/
 ```
 
-## 设置u-boot
+## Configure u-boot
 ```bash
 sudo vi /etc/default/u-boot
 
-# 在最后添加以下两行，已经添加的就不要重复添加了
+# Append the following two lines at the end; if already present, do not duplicate
 U_BOOT_FDT="device-tree/rockchip/rk3588s-orangepi-5.dtb"
 U_BOOT_FDT_OVERLAYS="device-tree/rockchip/overlay/orangepi-5-imx415-c1.dtbo"
 
-# 如果也有wifi或其他模块，则空格分割，添加在同一项
+# If you also have Wi‑Fi or other modules, separate by spaces in the same entry
 U_BOOT_FDT_OVERLAYS="device-tree/rockchip/overlay/orangepi-5-ap6275p.dtbo device-tree/rockchip/overlay/orangepi-5-imx415-c1.dtbo"
 
 ```
 
-## 刷新重启
+## Update and reboot
 ```bash
 sudo u-boot-update
 sudo reboot
 ```
 
-## 将imx415插到cam1接口，开机查看调试debug信息
+## Plug IMX415 into the CAM1 connector, then check debug logs after boot
 ```bash
 sudo dmesg | grep imx415
 
-# 看到如下信息就成功了
+# If you see output like below, it's successful
 mx@mx-pi:~$ sudo dmesg | grep imx415
 [   17.665535] imx415 7-001a: driver version: 00.01.08
 [   17.665541] imx415 7-001a:  Get hdr mode failed! no hdr default
@@ -81,18 +82,18 @@ mx@mx-pi:~$ sudo dmesg | grep imx415
 
 ```
 
-## 预览图像
+## Preview video
 ```bash
 gst-launch-1.0 v4l2src device=/dev/video11 ! video/x-raw,format=NV12,width=1920,height=1080, framerate=60/1 ! xvimagesink
 ```
 ![](pic/gst.png)
 
-## 运行demo
+## Run demo
 ```bash
 pip install opencv-python
 python3 demo.py
 ```
 ![](pic/demo.png)
 
-## 其他型号3588
-可以参考dts-original目录下的修改自行修改编译生成相应的dts文件
+## Other RK3588 variants
+Refer to the changes under the `dts-original` directory to modify and build the corresponding dtb files as needed.
