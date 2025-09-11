@@ -6,11 +6,49 @@ cd 3x
 git submodule update --init --recursive
 ```
 
-## Building OS
+
+## Install ubuntu rockchip
+
+https://github.com/Joshua-Riek/ubuntu-rockchip/releases/download/v2.4.0/ubuntu-24.04-preinstalled-server-arm64-orangepi-5-max.img.xz
+
+flash this with Balena Etcher to the M.2 SSD. The Max version is okay for Ultra, the only difference should be the HDMI input/output port
+
+
+
+## Getting OV13855 camera working
+
+See what overlays exist I used `orangepi-5-max-cam1.dtbo` overlay
+
 
 ```
-cd armbian-build
-mkdir userpatches && cp ../custom.sh userpatches/custom.sh
+# Check what devices exist, should have orangepi-5-max-cam1.dtbo overlay
+ls /usr/lib/firmware/6.1.0-1025-rockchip/device-tree/rockchip/overlay | grep cam1
+
+
+sudo nano /etc/default/u-boot
+
+# Edit this line
+# U_BOOT_FDT_OVERLAYS="device-tree/rockchip/overlay/orangepi-5-max-cam1.dtbo"
+
+sudo u-boot-update
+
+sudo reboot
+
+
+# See if finds cameras 
+dmesg | grep ov13855
+# Should show something like `Detected OV00d855 sensor, REVISION 0xb0`
+
+# Get test image
+# To find the device use `v4l2-ctl --list-devices` (the first dev from rkisp_mainpath)
+v4l2-ctl -d /dev/video33 --set-fmt-video=width=4224,height=3136,pixelformat='NV12' --stream-mmap --stream-skip=10 --stream-count=1 --stream-to=processed.yuv && ffmpeg -f rawvideo -pix_fmt nv12 -s 4224x3136 -i processed.yuv -y img.jpg
+```
+
+
+## For building Armbian OS (not used currently)
+
+```
+git clone https://github.com/armbian/build && cd armbian-build
 
 ./compile.sh BOARD=orangepi5-ultra RELEASE=noble BUILD_MINIMAL=yes BRANCH=vendor NETWORKING_STACK="network-manager"
 
