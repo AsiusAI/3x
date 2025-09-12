@@ -7286,28 +7286,30 @@
 			phandle = <0x193>;
 		};
 
-		ov13855-0@36 {
-			compatible = "ovti,ov13855";
+		imx415-0@1a {
+			compatible = "sony,imx415";
 			status = "disabled";
-			reg = <0x36>;
+			reg = <0x1a>;
+			data-lanes = <1 2 3 4>;
+			
 			clocks = <0x02 0x100>;
 			clock-names = "xvclk";
 			pinctrl-names = "default";
 			pinctrl-0 = <0x190>;
-			reset-gpios = <0x107 0x14 0x00>;
-			pwdn-gpios = <0x107 0x1d 0x00>;
+			reset-gpios = <0x107 0x14 0x01>;
+			power-gpios = <0x107 0x1d 0x00>;
+
 			rockchip,camera-module-index = <0x00>;
 			rockchip,camera-module-facing = "back";
-			rockchip,camera-module-name = "CMK-OT2016-FV1";
-			rockchip,camera-module-lens-name = "default";
-			lens-focus = <0x193>;
+			rockchip,camera-module-name = "CMK-OT2022-PX1";
+			rockchip,camera-module-lens-name = "IR0147-50IRC-8M-F20";
 			phandle = <0x2f8>;
 
 			port {
 
 				endpoint {
 					remote-endpoint = <0x194>;
-					data-lanes = <0x01 0x02>;
+					data-lanes = <1 2 3 4>;
 					phandle = <0x36>;
 				};
 			};
@@ -12690,8 +12692,8 @@
 		ov13850_0 = "/i2c@fec80000/ov13850-0@10";
 		ov13850_out0 = "/i2c@fec80000/ov13850-0@10/port/endpoint";
 		dw9714_p0 = "/i2c@fec80000/dw9714-p0@c";
-		ov13855_0 = "/i2c@fec80000/ov13855-0@36";
-		ov13855_out0 = "/i2c@fec80000/ov13855-0@36/port/endpoint";
+		imx415_0 = "/i2c@fec80000/imx415-0@1a";
+		imx415_out0 = "/i2c@fec80000/imx415-0@1a/port/endpoint";
 		hym8563 = "/i2c@fec80000/hym8563@51";
 		i2c7 = "/i2c@fec90000";
 		vm149c_p2 = "/i2c@fec90000/vm149c-p2@c";
