@@ -1,3 +1,9 @@
 [submodule "openpilot"]
 	path = openpilot
 	url = https://github.com/AsiusAI/openpilot
+[submodule "ubuntu-rockchip"]
+	path = ubuntu-rockchip
+	url = https://github.com/AsiusAI/ubuntu-rockchip
+[submodule "linux-rockchip"]
+	path = linux-rockchip
+	url = https://github.com/AsiusAI/linux-rockchip
