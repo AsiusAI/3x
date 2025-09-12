@@ -60,7 +60,7 @@
 				status = "okay";
 			};
 
-			ov13855-2@36 {
+			imx415-2@1a {
 				status = "okay";
 			};
 		};

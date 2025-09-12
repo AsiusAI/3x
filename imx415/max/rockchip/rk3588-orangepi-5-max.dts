@@ -1463,7 +1463,7 @@
 				endpoint@1 {
 					reg = <0x01>;
 					remote-endpoint = <0x33>;
-					data-lanes = <0x01 0x02>;
+					data-lanes = <1 2 3 4>;
 					phandle = <0x19b>;
 				};
 			};
@@ -1518,7 +1518,7 @@
 				endpoint@1 {
 					reg = <0x01>;
 					remote-endpoint = <0x36>;
-					data-lanes = <0x01 0x02>;
+					data-lanes = <1 2 3 4>;
 					phandle = <0x194>;
 				};
 			};
@@ -1582,7 +1582,7 @@
 				endpoint@1 {
 					reg = <0x01>;
 					remote-endpoint = <0x39>;
-					data-lanes = <0x01 0x02>;
+					data-lanes = <1 2 3 4>;
 					phandle = <0x160>;
 				};
 			};
@@ -6297,28 +6297,30 @@
 			phandle = <0x15f>;
 		};
 
-		ov13855-1@36 {
-			compatible = "ovti,ov13855";
+		imx415-1@1a {
+			compatible = "sony,imx415";
 			status = "disabled";
-			reg = <0x36>;
+			reg = <0x1a>;
+			data-lanes = <1 2 3 4>;
+
 			clocks = <0x02 0x101>;
 			clock-names = "xvclk";
 			pinctrl-names = "default";
 			pinctrl-0 = <0x15c>;
-			reset-gpios = <0x11b 0x09 0x00>;
-			pwdn-gpios = <0x11b 0x0b 0x00>;
+
+			reset-gpios = <0x11b 0x09 0x01>;
+			power-gpios = <0x11b 0x0b 0x00>;
 			rockchip,camera-module-index = <0x01>;
 			rockchip,camera-module-facing = "back";
-			rockchip,camera-module-name = "CMK-OT2016-FV1";
-			rockchip,camera-module-lens-name = "default";
-			lens-focus = <0x15f>;
+			rockchip,camera-module-name = "CMK-OT2022-PX1";
+			rockchip,camera-module-lens-name = "IR0147-50IRC-8M-F20";
 			phandle = <0x2c0>;
 
 			port {
 
 				endpoint {
 					remote-endpoint = <0x160>;
-					data-lanes = <0x01 0x02>;
+					data-lanes = <1 2 3 4>;
 					phandle = <0x39>;
 				};
 			};
@@ -7395,30 +7397,31 @@
 			phandle = <0x19a>;
 		};
 
-		ov13855-2@36 {
-			compatible = "ovti,ov13855";
+		imx415-2@1a {
+			compatible = "sony,imx415";
 			status = "disabled";
-			reg = <0x36>;
+			reg = <0x1a>;
 			clocks = <0x02 0x102>;
 			clock-names = "xvclk";
+
 			power-domains = <0x06 0x1b>;
 			pinctrl-names = "default";
 			pinctrl-0 = <0x197>;
 			rockchip,grf = <0xd4>;
-			reset-gpios = <0x11b 0x0a 0x00>;
-			pwdn-gpios = <0x11b 0x0c 0x00>;
+			reset-gpios = <0x11b 0x0a 0x01>;
+			power-gpios = <0x11b 0x0c 0x00>;
+
 			rockchip,camera-module-index = <0x02>;
 			rockchip,camera-module-facing = "back";
-			rockchip,camera-module-name = "CMK-OT2016-FV1";
-			rockchip,camera-module-lens-name = "default";
-			lens-focus = <0x19a>;
+			rockchip,camera-module-name = "CMK-OT2022-PX1";
+			rockchip,camera-module-lens-name = "IR0147-50IRC-8M-F20";
 			phandle = <0x2fb>;
 
 			port {
 
 				endpoint {
 					remote-endpoint = <0x19b>;
-					data-lanes = <0x01 0x02>;
+					data-lanes = <1 2 3 4>;
 					phandle = <0x33>;
 				};
 			};
@@ -12610,8 +12613,8 @@
 		ov13850_1 = "/i2c@feab0000/ov13850-1@10";
 		ov13850_out1 = "/i2c@feab0000/ov13850-1@10/port/endpoint";
 		dw9714_p1 = "/i2c@feab0000/dw9714-p1@c";
-		ov13855_1 = "/i2c@feab0000/ov13855-1@36";
-		ov13855_out1 = "/i2c@feab0000/ov13855-1@36/port/endpoint";
+		imx415_1 = "/i2c@feab0000/imx415-1@1a";
+		imx415_out1 = "/i2c@feab0000/imx415-1@1a/port/endpoint";
 		i2c4 = "/i2c@feac0000";
 		i2c5 = "/i2c@fead0000";
 		rktimer = "/timer@feae0000";
@@ -12700,8 +12703,8 @@
 		ov13850_2 = "/i2c@fec90000/ov13850-2@10";
 		ov13850_out2 = "/i2c@fec90000/ov13850-2@10/port/endpoint";
 		dw9714_p2 = "/i2c@fec90000/dw9714-p2@c";
-		ov13855_2 = "/i2c@fec90000/ov13855-2@36";
-		ov13855_out2 = "/i2c@fec90000/ov13855-2@36/port/endpoint";
+		imx415_2 = "/i2c@fec90000/imx415-2@1a";
+		imx415_out2 = "/i2c@fec90000/imx415-2@1a/port/endpoint";
 		es8388 = "/i2c@fec90000/es8388@11";
 		gt9xx_0 = "/i2c@fec90000/touchscreen@14";
 		i2c8 = "/i2c@feca0000";
