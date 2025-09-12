@@ -1,0 +1,113 @@
+/dts-v1/;
+
+/ {
+
+	fragment@0 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@1 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@2 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@3 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@4 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@6 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+
+			vm149c-p2@c {
+				status = "okay";
+			};
+
+			ov13850-2@10 {
+				status = "okay";
+			};
+
+			dw9714-p2@c {
+				status = "okay";
+			};
+
+			ov13855-2@36 {
+				status = "okay";
+			};
+		};
+	};
+
+	fragment@7 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@8 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@9 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@10 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	__fixups__ {
+		csi2_dcphy0 = "/fragment@0:target:0";
+		mipi0_csi2 = "/fragment@1:target:0";
+		rkcif_mipi_lvds = "/fragment@2:target:0";
+		rkcif_mipi_lvds_sditf = "/fragment@3:target:0";
+		rkisp0_vir0 = "/fragment@4:target:0";
+		i2c7 = "/fragment@6:target:0";
+		rkcif = "/fragment@7:target:0";
+		rkcif_mmu = "/fragment@8:target:0";
+		rkisp0 = "/fragment@9:target:0";
+		isp0_mmu = "/fragment@10:target:0";
+	};
+};

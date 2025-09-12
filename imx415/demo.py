@@ -1,6 +1,6 @@
 import cv2
 
-cap = cv2.VideoCapture("/dev/video33")
+cap = cv2.VideoCapture("/dev/video11")
 cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('U', 'Y', 'V', 'Y'))
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)

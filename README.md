@@ -35,7 +35,7 @@ sudo u-boot-update
 sudo reboot
 
 
-# See if finds cameras 
+# See if finds cameras
 dmesg | grep ov13855
 # Should show something like `Detected OV00d855 sensor, REVISION 0xb0`
 
@@ -54,3 +54,14 @@ git clone https://github.com/armbian/build && cd armbian-build
 
 sudo dd if=output/images/Armbian-unofficial_25.11.0-trunk_Orangepi5-ultra_noble_vendor_6.1.115_minimal.img of=/dev/sda bs=4M status=progress conv=fsync
 ```
+
+
+## A
+
+cp orangepi-5-imx415-c1.dtbo /usr/lib/firmware/6.1.0-1025-rockchip/device-tree/rockchip/overlay
+
+/usr/lib/firmware/6.1.0-1025-rockchip/device-tree/rockchip/rk3588-orangepi-5-max.dtb
+
+device-tree/rockchip/overlay/orangepi-5-max-cam0.dtbo
+device-tree/rockchip/overlay/orangepi-5-max-cam1.dtbo
+device-tree/rockchip/overlay/orangepi-5-max-cam2.dtbo

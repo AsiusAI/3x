@@ -1,0 +1,122 @@
+/dts-v1/;
+
+/ {
+
+	fragment@0 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@1 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@2 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@3 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@4 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@5 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@6 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+
+			vm149c-p1@c {
+				status = "okay";
+			};
+
+			ov13850-1@10 {
+				status = "okay";
+			};
+
+			dw9714-p1@c {
+				status = "okay";
+			};
+
+			ov13855-1@36 {
+				status = "okay";
+			};
+		};
+	};
+
+	fragment@7 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@8 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@9 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@10 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	__fixups__ {
+		csi2_dphy1_hw = "/fragment@0:target:0";
+		csi2_dphy3 = "/fragment@1:target:0";
+		mipi4_csi2 = "/fragment@2:target:0";
+		rkcif_mipi_lvds4 = "/fragment@3:target:0";
+		rkcif_mipi_lvds4_sditf = "/fragment@4:target:0";
+		rkisp1_vir1 = "/fragment@5:target:0";
+		i2c3 = "/fragment@6:target:0";
+		rkcif = "/fragment@7:target:0";
+		rkcif_mmu = "/fragment@8:target:0";
+		rkisp1 = "/fragment@9:target:0";
+		isp1_mmu = "/fragment@10:target:0";
+	};
+};
