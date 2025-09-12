@@ -65,3 +65,7 @@ cp orangepi-5-imx415-c1.dtbo /usr/lib/firmware/6.1.0-1025-rockchip/device-tree/r
 device-tree/rockchip/overlay/orangepi-5-max-cam0.dtbo
 device-tree/rockchip/overlay/orangepi-5-max-cam1.dtbo
 device-tree/rockchip/overlay/orangepi-5-max-cam2.dtbo
+
+
+
+sudo ./build.sh --suite noble --flavor server --board orangepi-5-max
