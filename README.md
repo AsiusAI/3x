@@ -52,7 +52,7 @@ v4l2-ctl -d /dev/video33 --set-fmt-video=width=4224,height=3136,pixelformat='NV1
 ```
 git clone https://github.com/armbian/build && cd armbian-build
 
-./compile.sh BOARD=orangepi5-ultra RELEASE=noble BUILD_MINIMAL=yes BRANCH=vendor NETWORKING_STACK="network-manager"
+./compile.sh BOARD=orangepi5-ultra RELEASE=noble BUILD_MINIMAL=yes BRANCH=vendor NETWORKING_STACK="network-manager" PREFER_DOCKER=no KERNEL_CONFIGURE=no
 
 sudo dd if=output/images/Armbian-unofficial_25.11.0-trunk_Orangepi5-ultra_noble_vendor_6.1.115_minimal.img of=/dev/sda bs=4M status=progress conv=fsync
 ```
