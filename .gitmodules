@@ -7,3 +7,6 @@
 [submodule "linux-rockchip"]
 	path = linux-rockchip
 	url = https://github.com/AsiusAI/linux-rockchip
+[submodule "armbian-build"]
+	path = armbian-build
+	url = https://github.com/AsiusAI/armbian-build
