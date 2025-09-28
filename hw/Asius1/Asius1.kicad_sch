@@ -578,7 +578,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -13.97 13.97 0)
 					(length 2.54)
 					(name "GND"
@@ -596,7 +596,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -13.97 11.43 0)
 					(length 2.54)
 					(name "SSTXp2"
@@ -614,7 +614,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -13.97 8.89 0)
 					(length 2.54)
 					(name "SSTXn2"
@@ -632,7 +632,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -13.97 6.35 0)
 					(length 2.54)
 					(name "VBUS"
@@ -650,7 +650,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -13.97 3.81 0)
 					(length 2.54)
 					(name "CC2"
@@ -668,7 +668,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -13.97 1.27 0)
 					(length 2.54)
 					(name "DP2"
@@ -686,7 +686,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -13.97 -1.27 0)
 					(length 2.54)
 					(name "DN2"
@@ -704,7 +704,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -13.97 -3.81 0)
 					(length 2.54)
 					(name "SUB2"
@@ -722,7 +722,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -13.97 -6.35 0)
 					(length 2.54)
 					(name "VBUS"
@@ -740,7 +740,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -13.97 -8.89 0)
 					(length 2.54)
 					(name "SSRXn1"
@@ -758,7 +758,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -13.97 -11.43 0)
 					(length 2.54)
 					(name "SSRXp1"
@@ -776,7 +776,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -13.97 -13.97 0)
 					(length 2.54)
 					(name "GND"
@@ -794,7 +794,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -1.27 21.59 270)
 					(length 5.08)
 					(name "0"
@@ -804,7 +804,7 @@
 							)
 						)
 					)
-					(number "0"
+					(number "S1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -812,7 +812,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -1.27 -21.59 90)
 					(length 5.08)
 					(name "0"
@@ -822,7 +822,7 @@
 							)
 						)
 					)
-					(number "0"
+					(number "S4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -830,7 +830,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 1.27 21.59 270)
 					(length 5.08)
 					(name "0"
@@ -840,7 +840,7 @@
 							)
 						)
 					)
-					(number "0"
+					(number "S3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -848,7 +848,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 1.27 -21.59 90)
 					(length 5.08)
 					(name "0"
@@ -858,7 +858,7 @@
 							)
 						)
 					)
-					(number "0"
+					(number "S2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -866,7 +866,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 13.97 13.97 180)
 					(length 2.54)
 					(name "GND"
@@ -884,7 +884,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 13.97 11.43 180)
 					(length 2.54)
 					(name "SSRXp2"
@@ -902,7 +902,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 13.97 8.89 180)
 					(length 2.54)
 					(name "SSRXn2"
@@ -920,7 +920,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 13.97 6.35 180)
 					(length 2.54)
 					(name "VBUS"
@@ -938,7 +938,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 13.97 3.81 180)
 					(length 2.54)
 					(name "SUB1"
@@ -956,7 +956,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 13.97 1.27 180)
 					(length 2.54)
 					(name "DN1"
@@ -974,7 +974,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 13.97 -1.27 180)
 					(length 2.54)
 					(name "DP1"
@@ -992,7 +992,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 13.97 -3.81 180)
 					(length 2.54)
 					(name "CC1"
@@ -1010,7 +1010,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 13.97 -6.35 180)
 					(length 2.54)
 					(name "VBUS"
@@ -1028,7 +1028,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 13.97 -8.89 180)
 					(length 2.54)
 					(name "SSTXn1"
@@ -1046,7 +1046,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 13.97 -11.43 180)
 					(length 2.54)
 					(name "SSTXP1"
@@ -1064,7 +1064,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 13.97 -13.97 180)
 					(length 2.54)
 					(name "GND"
@@ -5078,6 +5078,12 @@
 		(uuid "2cb6b1e6-6cfd-4034-99e4-fe7d9a97429f")
 	)
 	(junction
+		(at 57.15 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2fa3823e-1cc9-4031-954a-4964d6eebb13")
+	)
+	(junction
 		(at 222.25 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5172,12 +5178,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f153e1d2-cb30-468e-96b5-4475bd6d5718")
-	)
-	(junction
-		(at 57.15 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f42c6746-059a-493f-8d1b-58e7b65120b4")
 	)
 	(no_connect
 		(at 196.85 72.39)
@@ -8998,6 +8998,199 @@
 			(project "Asius1"
 				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
 					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "1_my_custom_symbol_lib:TYPE-C-31-M-04")
+		(at 43.18 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a069b99-f97a-45cc-933f-3e4c4b08abf6")
+		(property "Reference" "USBC1"
+			(at 46.5933 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 46.5933 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1_My_custom_library:USB-C-SMD_TYPE-C-USB-20"
+			(at 43.18 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/TYPE-C-31-M-04/140304.html"
+			(at 43.18 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector Type:Type-C Protocol Standard:- Gender:Female Number of Contacts:24P Number of Ports:1"
+			(at 43.18 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "TYPE-C-31-M-04"
+			(at 43.18 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 43.18 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C129018"
+			(at 43.18 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 43.18 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "Type-C 母"
+			(at 43.18 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "B4"
+			(uuid "5d9ac292-d251-4b63-9426-461826a3be59")
+		)
+		(pin "B5"
+			(uuid "ef2a51a0-9064-4f4d-a19a-8436b27b914e")
+		)
+		(pin "B6"
+			(uuid "0281599f-6203-428a-a174-a4a76fc46009")
+		)
+		(pin "B7"
+			(uuid "c29c78ed-d404-49be-96f4-e81475dd6b01")
+		)
+		(pin "A7"
+			(uuid "5b375b0a-6033-4ff7-b6cf-36b3cf7d526a")
+		)
+		(pin "A6"
+			(uuid "e6c287c1-735b-437c-b383-419be0110e20")
+		)
+		(pin "A5"
+			(uuid "c80ddd83-c36b-417c-a11d-19a316d1482d")
+		)
+		(pin "A4"
+			(uuid "8da9a5e8-bf02-4a1d-834c-e2b2bb927a6c")
+		)
+		(pin "A3"
+			(uuid "afadb84a-b850-4087-be52-9dbb342424a8")
+		)
+		(pin "A2"
+			(uuid "cfc3c95d-9eeb-455e-a86d-b0b7f31bddb7")
+		)
+		(pin "A1"
+			(uuid "21c65122-216d-4e4d-b1c4-71bf8ef31349")
+		)
+		(pin "B12"
+			(uuid "fa1548f3-4be7-4e57-9d15-692a3577ca51")
+		)
+		(pin "S1"
+			(uuid "0e3dcddc-b2f4-43ff-89a8-b38cda7df2fa")
+		)
+		(pin "B10"
+			(uuid "1753189a-dbaa-40ad-8052-4c58e403d660")
+		)
+		(pin "B11"
+			(uuid "c94c215c-2cce-497a-adae-991b9c13ea99")
+		)
+		(pin "B1"
+			(uuid "495eeffc-ff53-4114-b4c8-82e25d23ede2")
+		)
+		(pin "B2"
+			(uuid "61a9908e-402e-4411-8004-9d90acd8b13c")
+		)
+		(pin "B3"
+			(uuid "24dbc423-fd37-4274-9960-9aa3b6389cdb")
+		)
+		(pin "S4"
+			(uuid "dfe03c73-200b-4de7-9b4a-86bf27e9005c")
+		)
+		(pin "S3"
+			(uuid "430a9fa1-5d41-4190-a211-034b411d5f50")
+		)
+		(pin "S2"
+			(uuid "19a53782-348d-47b4-8e36-6de6b02e0453")
+		)
+		(pin "A12"
+			(uuid "7e71c61c-12fb-459d-bed6-05ba2db7ea38")
+		)
+		(pin "A11"
+			(uuid "b0452b51-e551-4eba-9144-8aaaab95d097")
+		)
+		(pin "A10"
+			(uuid "14f1bbb4-e4e1-45e7-abb8-5652c461a4d2")
+		)
+		(pin "A9"
+			(uuid "f343d5c9-91ee-44a1-8026-a2370161d541")
+		)
+		(pin "A8"
+			(uuid "dff296cf-08e5-48d8-83a4-7d4683683bd3")
+		)
+		(pin "B8"
+			(uuid "dc89ae75-0b7e-45ef-84cf-cffdfebae400")
+		)
+		(pin "B9"
+			(uuid "1f029916-b893-4bad-9503-4b0410f5fb0a")
+		)
+		(instances
+			(project ""
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "USBC1")
 					(unit 1)
 				)
 			)
@@ -13058,200 +13251,6 @@
 			(project ""
 				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
 					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "1_my_custom_symbol_lib:TYPE-C-31-M-04")
-		(at 43.18 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d385ba15-355c-454e-b6f0-8147d59e242f")
-		(property "Reference" "USBC1"
-			(at 46.5933 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "OBD-C"
-			(at 46.5933 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "1_My_custom_library:USB-C-SMD_TYPE-C-USB-20"
-			(at 43.18 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/TYPE-C-31-M-04/140304.html"
-			(at 43.18 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Connector Type:Type-C Protocol Standard:- Gender:Female Number of Contacts:24P Number of Ports:1"
-			(at 43.18 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TYPE-C-31-M-04"
-			(at 43.18 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Korean Hroparts Elec"
-			(at 43.18 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C129018"
-			(at 43.18 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 43.18 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Name" "Type-C 母"
-			(at 43.18 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "A5"
-			(uuid "b399cf6f-644f-4be5-985a-dd598bce956e")
-		)
-		(pin "B6"
-			(uuid "fbb13400-c244-48ce-a90a-4ba7c69f5d41")
-		)
-		(pin "0"
-			(uuid "45d73c00-ece6-4bd5-9084-fb72c28b0685")
-		)
-		(pin "B3"
-			(uuid "c2a665b1-00fb-4a56-8630-1ce506be6d9c")
-		)
-		(pin "B9"
-			(uuid "d7c1923c-cd8f-4ef9-a5c9-d42bf3982175")
-		)
-		(pin "B11"
-			(uuid "c15edd49-8cb7-4fce-8966-1c86f7dd5fd7")
-		)
-		(pin "B7"
-			(uuid "d2541955-6523-4c09-9da1-1e56061de7ba")
-		)
-		(pin "B4"
-			(uuid "180a3abd-51b2-4963-912e-aad57329580d")
-		)
-		(pin "B12"
-			(uuid "3f4631b9-91eb-4836-b647-5c9ae9d37b37")
-		)
-		(pin "B5"
-			(uuid "db8348de-941e-4625-a635-4eee831322e0")
-		)
-		(pin "B8"
-			(uuid "9c66d954-d663-4f46-8cbd-1927207fa897")
-		)
-		(pin "B10"
-			(uuid "a9c6efa1-e25f-47e4-baf5-c2d853fbcc9d")
-		)
-		(pin "0"
-			(uuid "8eed3787-50c6-4d9d-8416-212b410a1c02")
-		)
-		(pin "B1"
-			(uuid "7a819b2c-43b8-4fad-b211-763dff9eb4ed")
-		)
-		(pin "B2"
-			(uuid "53897f7c-5e3f-4b77-acf1-75eef31918a7")
-		)
-		(pin "A7"
-			(uuid "18977b32-d5ef-4596-b8dc-1faf3691eea8")
-		)
-		(pin "A3"
-			(uuid "75fed6cd-c2b2-4aaa-adaa-3b61270a93d0")
-		)
-		(pin "A12"
-			(uuid "c01738ed-fb7f-4b13-a861-f8065f0f63dc")
-		)
-		(pin "A9"
-			(uuid "fa6ae8ff-7833-43d6-b21b-54e5d397dab3")
-		)
-		(pin "A2"
-			(uuid "40e173f1-7eb1-426d-9ff7-cf718f4457b0")
-		)
-		(pin "A4"
-			(uuid "e0c950ee-6325-4be1-9ede-2c4124ff7ff1")
-		)
-		(pin "A6"
-			(uuid "88c22f85-125b-4747-a719-3ea26b802162")
-		)
-		(pin "A11"
-			(uuid "e083ed5b-80e5-4292-a4a0-c409916004bd")
-		)
-		(pin "A10"
-			(uuid "1a7273ea-e8f5-4b1b-9319-ec59032996bf")
-		)
-		(pin "A1"
-			(uuid "bc61282f-f28c-4224-9560-0de261d8f6cc")
-		)
-		(pin "0"
-			(uuid "0327b168-b603-4cb2-ac5d-61292bed84d1")
-		)
-		(pin "A8"
-			(uuid "86a5d9a0-8cbf-4e9d-8513-fbd610337f68")
-		)
-		(pin "0"
-			(uuid "d4094fca-7bf7-4ccc-a1b3-89f68fd4dba4")
-		)
-		(instances
-			(project ""
-				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
-					(reference "USBC1")
 					(unit 1)
 				)
 			)

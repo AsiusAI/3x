@@ -1,0 +1,202 @@
+{
+  "Header": {
+    "GenerationSoftware": {
+      "Vendor": "KiCad",
+      "Application": "Pcbnew",
+      "Version": "9.0.4"
+    },
+    "CreationDate": "2025-09-28T18:54:50+03:00"
+  },
+  "GeneralSpecs": {
+    "ProjectId": {
+      "Name": "Asius2",
+      "GUID": "41736975-7332-42e6-9b69-6361645f7063",
+      "Revision": "rev?"
+    },
+    "Size": {
+      "X": 40.05,
+      "Y": 60.05
+    },
+    "LayerNumber": 6,
+    "BoardThickness": 1.6,
+    "Finish": "None"
+  },
+  "DesignRules": [
+    {
+      "Layers": "Outer",
+      "PadToPad": 0.0762,
+      "PadToTrack": 0.0762,
+      "TrackToTrack": 0.0762,
+      "MinLineWidth": 0.0762
+    },
+    {
+      "Layers": "Inner",
+      "PadToPad": 0.0762,
+      "PadToTrack": 0.0762,
+      "TrackToTrack": 0.0762,
+      "MinLineWidth": 0.1,
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
+    }
+  ],
+  "FilesAttributes": [
+    {
+      "Path": "Asius2-SIGNAL1.gbr",
+      "FileFunction": "Copper,L1,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Asius2-GND1.gbr",
+      "FileFunction": "Copper,L5,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Asius2-SIGNAL2.gbr",
+      "FileFunction": "Copper,L7,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Asius2-3_3V.gbr",
+      "FileFunction": "Copper,L9,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Asius2-GND2.gbr",
+      "FileFunction": "Copper,L11,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Asius2-SIGNAL3.gbr",
+      "FileFunction": "Copper,L6,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Asius2-F_Paste.gbr",
+      "FileFunction": "SolderPaste,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Asius2-B_Paste.gbr",
+      "FileFunction": "SolderPaste,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Asius2-F_Silkscreen.gbr",
+      "FileFunction": "Legend,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Asius2-B_Silkscreen.gbr",
+      "FileFunction": "Legend,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Asius2-F_Mask.gbr",
+      "FileFunction": "SolderMask,Top",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "Asius2-B_Mask.gbr",
+      "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "Asius2-Edge_Cuts.gbr",
+      "FileFunction": "Profile",
+      "FilePolarity": "Positive"
+    }
+  ],
+  "MaterialStackup": [
+    {
+      "Type": "Legend",
+      "Name": "Top Silk Screen"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Top Solder Paste"
+    },
+    {
+      "Type": "SolderMask",
+      "Thickness": 0.01,
+      "Name": "Top Solder Mask"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "SIGNAL1"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.1,
+      "Material": "FR4",
+      "Name": "SIGNAL1/GND1",
+      "Notes": "Type: dielectric layer 1 (from SIGNAL1 to GND1)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "GND1"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.535,
+      "Material": "FR4",
+      "Name": "GND1/SIGNAL2",
+      "Notes": "Type: dielectric layer 2 (from GND1 to SIGNAL2)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "SIGNAL2"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.1,
+      "Material": "FR4",
+      "Name": "SIGNAL2/3.3V",
+      "Notes": "Type: dielectric layer 3 (from SIGNAL2 to 3.3V)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "3.3V"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.535,
+      "Material": "FR4",
+      "Name": "3.3V/GND2",
+      "Notes": "Type: dielectric layer 4 (from 3.3V to GND2)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "GND2"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.1,
+      "Material": "FR4",
+      "Name": "GND2/SIGNAL3",
+      "Notes": "Type: dielectric layer 5 (from GND2 to SIGNAL3)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "SIGNAL3"
+    },
+    {
+      "Type": "SolderMask",
+      "Thickness": 0.01,
+      "Name": "Bottom Solder Mask"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Bottom Solder Paste"
+    },
+    {
+      "Type": "Legend",
+      "Name": "Bottom Silk Screen"
+    }
+  ]
+}
