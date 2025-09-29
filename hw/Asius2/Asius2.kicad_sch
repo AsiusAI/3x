@@ -4561,6 +4561,168 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED_RGBA"
 			(pin_names
 				(offset 0)
@@ -5283,203 +5445,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Jumper:SolderJumper_2_Bridged"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_2_Bridged"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Solder Jumper, 2-pole, closed/bridged"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "solder jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Bridged*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SolderJumper_2_Bridged_0_1"
-				(rectangle
-					(start -0.508 0.508)
-					(end 0.508 -0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.016) (xy 0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SolderJumper_2_Bridged_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10018,6 +9983,407 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Regulator_Switching:TPS62133"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 3.81 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TPS62133"
+				(at 3.81 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias"
+				(at 3.81 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps62130.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "3A Step-Down Converter with DCS-Control, Fixed 5.0V Output Voltage, 3-17V Input Voltage, QFN-16"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "step-down dcdc"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "VQFN*1EP*3x3mm*P0.5mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPS62133_0_1"
+				(rectangle
+					(start -7.62 10.16)
+					(end 7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TPS62133_1_1"
+				(pin input line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "SS/TR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "DEF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "FSW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 12.7 270)
+					(length 2.54)
+					(hide yes)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 12.7 270)
+					(length 2.54)
+					(hide yes)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "VOS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -10158,6 +10524,131 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+12V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10664,12 +11155,6 @@
 		(uuid "35abfa07-c420-4539-8856-0915cb86f390")
 	)
 	(junction
-		(at 66.04 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "36889d99-bb4c-46b2-adeb-001d185c8889")
-	)
-	(junction
 		(at 271.78 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10748,6 +11233,12 @@
 		(uuid "72d3fc5f-28fd-416e-ab89-375f1b03af1c")
 	)
 	(junction
+		(at 72.39 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "856af094-dffd-4f6d-b988-b066e9e0c11f")
+	)
+	(junction
 		(at 332.74 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10764,6 +11255,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8bebedf5-1e94-4fa2-ab4e-2d6de54be565")
+	)
+	(junction
+		(at 78.74 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c50ce10-f115-4d0d-8243-12ecbcd75f19")
 	)
 	(junction
 		(at 327.66 39.37)
@@ -10790,10 +11287,16 @@
 		(uuid "9703f572-97ba-4b4a-8612-232d17c50292")
 	)
 	(junction
-		(at 22.86 34.29)
+		(at 116.84 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a268e28b-d61a-4fb9-8892-f1cc964f2eba")
+	)
+	(junction
+		(at 41.91 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a86e47d2-0224-4c9f-9382-9db0a5d2eb06")
 	)
 	(junction
 		(at 142.24 219.71)
@@ -10820,6 +11323,12 @@
 		(uuid "ca437315-e9e2-4d93-9dd3-6e2a63c7078b")
 	)
 	(junction
+		(at 59.69 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb7ddc8c-fc77-4476-b3eb-50ec046286c7")
+	)
+	(junction
 		(at 71.12 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10830,6 +11339,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d9a5df12-86e3-4608-a42c-68f1416416f2")
+	)
+	(junction
+		(at 41.91 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ddc1c261-8b69-4cda-93ed-695467375a62")
 	)
 	(junction
 		(at 360.68 39.37)
@@ -10862,7 +11377,7 @@
 		(uuid "ef8d5e00-5cf2-4bfc-a095-a3a27d0b23f1")
 	)
 	(junction
-		(at 38.1 34.29)
+		(at 132.08 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f153e1d2-cb30-468e-96b5-4475bd6d5718")
@@ -11170,6 +11685,10 @@
 		(uuid "9f461018-bf9b-4b0f-957c-fc3a8d03e85a")
 	)
 	(no_connect
+		(at 52.07 54.61)
+		(uuid "a6cf4df8-3d00-425f-868d-121073c0455e")
+	)
+	(no_connect
 		(at 294.64 113.03)
 		(uuid "a7c8241d-7384-4007-90f6-3150b9d3930f")
 	)
@@ -11393,13 +11912,33 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 34.29) (xy 66.04 34.29)
+			(xy 41.91 31.75) (xy 41.91 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2a964ec3-b39b-4078-b5f2-8696430f7713")
+		(uuid "253f46ff-b42b-4420-8696-a62117f5138b")
+	)
+	(wire
+		(pts
+			(xy 31.75 39.37) (xy 41.91 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "298798d3-4d90-48f4-87ff-f69222769c05")
+	)
+	(wire
+		(pts
+			(xy 52.07 52.07) (xy 59.69 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "305fbb66-db43-4791-9aff-5c46e02f4d15")
 	)
 	(wire
 		(pts
@@ -11420,16 +11959,6 @@
 			(type default)
 		)
 		(uuid "3fc4a073-de2f-4851-9387-dce5246bacff")
-	)
-	(wire
-		(pts
-			(xy 38.1 34.29) (xy 46.99 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40afbc95-1551-4ba6-9ccf-19016c4bc298")
 	)
 	(wire
 		(pts
@@ -11493,6 +12022,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 46.99) (xy 59.69 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "709abbad-bcd9-40b4-b140-df83c9baf55c")
+	)
+	(wire
+		(pts
 			(xy 138.43 260.35) (xy 142.24 260.35)
 		)
 		(stroke
@@ -11500,6 +12039,26 @@
 			(type default)
 		)
 		(uuid "711a4dc7-e2e0-4a50-9fdc-70e1755e2596")
+	)
+	(wire
+		(pts
+			(xy 31.75 46.99) (xy 31.75 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "764ff1d5-ff7c-4ed1-8312-831af590d334")
+	)
+	(wire
+		(pts
+			(xy 78.74 52.07) (xy 82.55 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bfee86d-5fdc-4e8e-8b32-3eec31e26748")
 	)
 	(wire
 		(pts
@@ -11520,6 +12079,16 @@
 			(type default)
 		)
 		(uuid "82231b2a-bb75-46a6-b648-16161e247c1e")
+	)
+	(wire
+		(pts
+			(xy 132.08 45.72) (xy 148.59 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86d9590b-5bea-48a2-863a-e6fd6a111267")
 	)
 	(wire
 		(pts
@@ -11563,16 +12132,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 34.29) (xy 69.85 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97ee4803-aea3-4cb2-9b19-120cc9d7c9ad")
-	)
-	(wire
-		(pts
 			(xy 271.78 54.61) (xy 294.64 54.61)
 		)
 		(stroke
@@ -11580,6 +12139,16 @@
 			(type default)
 		)
 		(uuid "988a58e3-ec10-4fb2-8f35-ed73c9477a4e")
+	)
+	(wire
+		(pts
+			(xy 41.91 27.94) (xy 41.91 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a135bb9e-f901-49e3-998e-f5da6290a148")
 	)
 	(wire
 		(pts
@@ -11633,6 +12202,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 52.07) (xy 78.74 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1b7719f-2ca0-4dfb-9a48-6d566b61e47e")
+	)
+	(wire
+		(pts
 			(xy 71.12 144.78) (xy 55.88 144.78)
 		)
 		(stroke
@@ -11670,6 +12249,16 @@
 			(type default)
 		)
 		(uuid "e446824a-0be6-4752-9bd1-464794f103f5")
+	)
+	(wire
+		(pts
+			(xy 59.69 52.07) (xy 72.39 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb68a961-b475-4c0b-8bef-c56f1edffa6f")
 	)
 	(wire
 		(pts
@@ -12912,6 +13501,196 @@
 		(uuid "fd7eb1c6-4d0a-4c8d-be19-10889b55ea12")
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 55.88 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00a103a0-4e8a-4875-b936-f3b53ffaa79d")
+		(property "Reference" "L1"
+			(at 55.88 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2µH"
+			(at 55.88 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Coilcraft_XxL4020"
+			(at 55.88 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 55.88 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C122469"
+			(at 55.88 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "XFL4020-222MEC"
+			(at 55.88 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Coilcraft"
+			(at 55.88 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7c7e9b8b-3d2c-4ef2-9c4d-f88cfa32bb12")
+		)
+		(pin "2"
+			(uuid "738233f9-67aa-425b-8cb6-5138cd35ed96")
+		)
+		(instances
+			(project ""
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 39.37 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01b0306d-1883-4297-ba9f-150cf52ae0a9")
+		(property "Reference" "C43"
+			(at 39.3763 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 39.3763 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 39.37 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 39.37 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C89831"
+			(at 39.37 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0805KKX5R8BB106"
+			(at 39.37 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 39.37 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "04666984-e6d8-4e46-9d2a-08663b9b608e")
+		)
+		(pin "1"
+			(uuid "21c28ae1-2525-488b-9cd4-c345dbe7875b")
+		)
+		(instances
+			(project "Asius2"
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "C43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 233.68 86.36 180)
 		(unit 1)
@@ -12979,7 +13758,7 @@
 	)
 	(symbol
 		(lib_id "1_my_custom_symbol_lib:MY_C_SMALL")
-		(at 38.1 31.75 0)
+		(at 132.08 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12988,7 +13767,7 @@
 		(fields_autoplaced yes)
 		(uuid "032fed5b-d4fa-4774-a527-951ab7d331ec")
 		(property "Reference" "C2"
-			(at 38.354 30.48 0)
+			(at 132.334 41.91 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -12998,7 +13777,7 @@
 			)
 		)
 		(property "Value" "22pF"
-			(at 38.354 33.02 0)
+			(at 132.334 44.45 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -13008,7 +13787,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 38.1 31.75 0)
+			(at 132.08 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13017,7 +13796,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 38.1 31.75 0)
+			(at 132.08 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13026,16 +13805,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 38.1 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0603JRNPO9BN220"
-			(at 38.1 31.75 0)
+			(at 132.08 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13044,7 +13814,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 38.1 31.75 0)
+			(at 132.08 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13053,7 +13823,7 @@
 			)
 		)
 		(property "Manufacturer Part" ""
-			(at 38.1 31.75 0)
+			(at 132.08 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13062,7 +13832,25 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 38.1 31.75 0)
+			(at 132.08 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C105620"
+			(at 132.08 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603JRNPO9BN220"
+			(at 132.08 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13154,7 +13942,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 69.85 34.29 270)
+		(at 148.59 45.72 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13163,7 +13951,7 @@
 		(fields_autoplaced yes)
 		(uuid "05b1c482-1cca-463b-921e-c29ec0064935")
 		(property "Reference" "#PWR018"
-			(at 66.04 34.29 0)
+			(at 144.78 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13172,7 +13960,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 73.66 34.2899 90)
+			(at 152.4 45.7199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13181,7 +13969,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 34.29 0)
+			(at 148.59 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13190,7 +13978,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 34.29 0)
+			(at 148.59 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13199,7 +13987,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 69.85 34.29 0)
+			(at 148.59 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13214,6 +14002,73 @@
 			(project ""
 				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 54.61 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05f7b949-0b6a-42a3-9e13-c19a82b97d5c")
+		(property "Reference" "#PWR0120"
+			(at 25.4 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 54.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78bf51e2-df34-4d16-9d07-e6527b6c7c2a")
+		)
+		(instances
+			(project "Asius2"
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -13272,7 +14127,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "-"
+		(property "Manufacturer" "-"
 			(at 223.52 176.53 0)
 			(effects
 				(font
@@ -13281,7 +14136,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "-"
+		(property "JLCPCB Part #" ""
+			(at 223.52 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "-"
 			(at 223.52 176.53 0)
 			(effects
 				(font
@@ -13379,15 +14243,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0762RL"
-			(at 82.55 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 82.55 262.89 0)
 			(effects
@@ -13407,6 +14262,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 82.55 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C245989"
+			(at 82.55 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-0762RL"
 			(at 82.55 262.89 0)
 			(effects
 				(font
@@ -13460,7 +14333,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 337.82 36.83 0)
 			(effects
 				(font
@@ -13479,15 +14352,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 337.82 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 337.82 36.83 0)
 			(effects
 				(font
@@ -13515,6 +14379,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 337.82 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 337.82 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 337.82 36.83 0)
 			(effects
 				(font
@@ -13624,7 +14506,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 160.02 270.5099 90)
 			(effects
 				(font
@@ -13702,7 +14584,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 104.14 273.05 0)
 			(effects
 				(font
@@ -13721,15 +14603,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 104.14 273.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 104.14 273.05 0)
 			(effects
 				(font
@@ -13757,6 +14630,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 104.14 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 104.14 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 104.14 273.05 0)
 			(effects
 				(font
@@ -14008,7 +14899,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 350.52 36.83 0)
 			(effects
 				(font
@@ -14027,15 +14918,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 350.52 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 350.52 36.83 0)
 			(effects
 				(font
@@ -14063,6 +14945,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 350.52 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 350.52 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 350.52 36.83 0)
 			(effects
 				(font
@@ -14274,15 +15174,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0762RL"
-			(at 142.24 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 142.24 217.17 0)
 			(effects
@@ -14310,6 +15201,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Part #" "C245989"
+			(at 142.24 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-0762RL"
+			(at 142.24 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "455541e4-2d79-4859-8662-c2791f0edcf0")
 		)
@@ -14327,7 +15236,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 22.86 29.21 180)
+		(at 116.84 40.64 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14336,7 +15245,7 @@
 		(fields_autoplaced yes)
 		(uuid "16937244-ea41-4a5d-aadf-f5f428242042")
 		(property "Reference" "#PWR01"
-			(at 22.86 22.86 0)
+			(at 116.84 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14345,7 +15254,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 22.86 24.13 0)
+			(at 116.84 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14353,7 +15262,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 22.86 29.21 0)
+			(at 116.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14362,7 +15271,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 29.21 0)
+			(at 116.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14371,7 +15280,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 22.86 29.21 0)
+			(at 116.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14659,6 +15568,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 72.39 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d540450-e471-4318-9d96-7c510e9c1a80")
+		(property "Reference" "#PWR0123"
+			(at 72.39 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 72.39 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 72.39 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98a0ea2b-3eba-4adc-ad55-862f60a4428c")
+		)
+		(instances
+			(project "Asius2"
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 81.28 19.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14753,7 +15728,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 345.44 36.83 0)
 			(effects
 				(font
@@ -14772,15 +15747,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 345.44 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 345.44 36.83 0)
 			(effects
 				(font
@@ -14808,6 +15774,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 345.44 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 345.44 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 345.44 36.83 0)
 			(effects
 				(font
@@ -14887,15 +15871,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0762RL"
-			(at 82.55 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 82.55 217.17 0)
 			(effects
@@ -14923,6 +15898,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Part #" "C245989"
+			(at 82.55 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-0762RL"
+			(at 82.55 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "38f69941-c37d-410b-b5d9-62033bc70ebd")
 		)
@@ -14933,6 +15926,72 @@
 			(project "Asius2"
 				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 41.91 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "212eb545-9592-4721-9a05-cf18f52b9e32")
+		(property "Reference" "#PWR0114"
+			(at 41.91 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43ed91e4-4286-40c7-ab2d-f598561fcb26")
+		)
+		(instances
+			(project ""
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -14994,15 +16053,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0762RL"
-			(at 142.24 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 142.24 222.25 0)
 			(effects
@@ -15022,6 +16072,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 142.24 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C245989"
+			(at 142.24 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-0762RL"
 			(at 142.24 222.25 0)
 			(effects
 				(font
@@ -15130,7 +16198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 160.02 229.8699 90)
 			(effects
 				(font
@@ -15275,7 +16343,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 320.04 36.83 0)
 			(effects
 				(font
@@ -15294,15 +16362,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 320.04 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 320.04 36.83 0)
 			(effects
 				(font
@@ -15330,6 +16389,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 320.04 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 320.04 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 320.04 36.83 0)
 			(effects
 				(font
@@ -15517,7 +16594,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "LSM6DSOXTR"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 215.9 96.52 0)
 			(effects
 				(font
@@ -15526,7 +16603,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "STMicroelectronics"
+		(property "JLCPCB Part #" "C481766"
+			(at 215.9 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "LSM6DSOXTR"
 			(at 215.9 96.52 0)
 			(effects
 				(font
@@ -15639,7 +16725,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CC0603MRX5R5BB226"
+		(property "Manufacturer" "YAGEO"
 			(at 175.26 113.03 90)
 			(effects
 				(font
@@ -15648,7 +16734,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "JLCPCB Part #" "C109448"
+			(at 175.26 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603MRX5R5BB226"
 			(at 175.26 113.03 90)
 			(effects
 				(font
@@ -15861,15 +16956,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0710KL"
-			(at 195.58 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 195.58 93.98 0)
 			(effects
@@ -15890,6 +16976,24 @@
 		)
 		(property "Sim.Pins" ""
 			(at 195.58 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C98220 "
+			(at 195.58 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-0710KL"
+			(at 195.58 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16033,15 +17137,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0710KL"
-			(at 195.58 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 195.58 96.52 0)
 			(effects
@@ -16069,6 +17164,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Part #" "C98220 "
+			(at 195.58 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-0710KL"
+			(at 195.58 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "84272579-99cc-4059-8ce5-479405fa5156")
 		)
@@ -16079,6 +17192,101 @@
 			(project "Asius2"
 				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 29.21 49.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e4d529f-7e32-4ad6-b494-8be702966913")
+		(property "Reference" "C42"
+			(at 29.2163 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3nF"
+			(at 29.2163 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 29.21 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 29.21 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C107048"
+			(at 29.21 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603JRNPO9BN332"
+			(at 29.21 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 29.21 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "af6a1806-ae30-4857-aa1b-566b00917116")
+		)
+		(pin "1"
+			(uuid "9a46297c-0baf-4457-be76-bcb873451c69")
+		)
+		(instances
+			(project ""
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -16140,15 +17348,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0762RL"
-			(at 82.55 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 82.55 222.25 0)
 			(effects
@@ -16168,6 +17367,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 82.55 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C245989"
+			(at 82.55 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-0762RL"
 			(at 82.55 222.25 0)
 			(effects
 				(font
@@ -16487,7 +17704,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 292.1 62.23 0)
 			(effects
 				(font
@@ -16506,15 +17723,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 292.1 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 292.1 62.23 0)
 			(effects
 				(font
@@ -16542,6 +17750,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 292.1 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 292.1 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 292.1 62.23 0)
 			(effects
 				(font
@@ -16584,7 +17810,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+12V"
 			(at 74.93 144.7799 90)
 			(effects
 				(font
@@ -16662,7 +17888,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 335.28 36.83 0)
 			(effects
 				(font
@@ -16681,15 +17907,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 335.28 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 335.28 36.83 0)
 			(effects
 				(font
@@ -16717,6 +17934,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 335.28 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 335.28 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 335.28 36.83 0)
 			(effects
 				(font
@@ -16759,7 +17994,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+12V"
 			(at 24.13 132.0799 90)
 			(effects
 				(font
@@ -16809,7 +18044,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 22.86 34.29 180)
+		(at 116.84 45.72 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16818,7 +18053,7 @@
 		(fields_autoplaced yes)
 		(uuid "3b3cab4e-f9b2-4b7c-8a19-ad55f3a09a64")
 		(property "Reference" "#PWR02"
-			(at 22.86 30.48 0)
+			(at 120.65 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16827,15 +18062,16 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 22.86 39.37 0)
+			(at 113.03 45.7199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 22.86 34.29 0)
+			(at 116.84 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16844,7 +18080,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 34.29 0)
+			(at 116.84 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16853,7 +18089,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 22.86 34.29 0)
+			(at 116.84 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17035,7 +18271,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 332.74 36.83 0)
 			(effects
 				(font
@@ -17054,15 +18290,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 332.74 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 332.74 36.83 0)
 			(effects
 				(font
@@ -17098,6 +18325,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Part #" "C14663"
+			(at 332.74 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
+			(at 332.74 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "29d48cbe-2ba3-4125-912f-8a9076999031")
 		)
@@ -17108,6 +18353,73 @@
 			(project "Asius2"
 				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
 					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 52.07 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44be1257-6737-4f2b-bc5b-84c497247a02")
+		(property "Reference" "#PWR0116"
+			(at 58.42 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 55.88 57.1499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 52.07 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44f36449-06f8-44c1-b7a3-034b2d93ca32")
+		)
+		(instances
+			(project ""
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -17344,7 +18656,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 365.76 36.83 0)
 			(effects
 				(font
@@ -17363,15 +18675,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 365.76 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 365.76 36.83 0)
 			(effects
 				(font
@@ -17399,6 +18702,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 365.76 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 365.76 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 365.76 36.83 0)
 			(effects
 				(font
@@ -17487,7 +18808,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TJA1042T/1J"
+		(property "Manufacturer" "NXP Semicon"
 			(at 104.14 219.71 0)
 			(effects
 				(font
@@ -17496,7 +18817,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "NXP Semicon"
+		(property "JLCPCB Part #" "C53670"
+			(at 104.14 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "TJA1042T/1J"
 			(at 104.14 219.71 0)
 			(effects
 				(font
@@ -17568,7 +18898,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 236.22 86.36 0)
 			(effects
 				(font
@@ -17587,15 +18917,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 236.22 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 236.22 86.36 0)
 			(effects
 				(font
@@ -17623,6 +18944,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 236.22 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 236.22 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 236.22 86.36 0)
 			(effects
 				(font
@@ -17676,7 +19015,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 325.12 36.83 0)
 			(effects
 				(font
@@ -17695,15 +19034,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 325.12 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 325.12 36.83 0)
 			(effects
 				(font
@@ -17731,6 +19061,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 325.12 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 325.12 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 325.12 36.83 0)
 			(effects
 				(font
@@ -18075,15 +19423,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CC0603KRX7R8BB223"
-			(at 76.2 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 76.2 260.35 0)
 			(effects
@@ -18103,6 +19442,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 76.2 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C106217"
+			(at 76.2 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R8BB223"
 			(at 76.2 260.35 0)
 			(effects
 				(font
@@ -18248,15 +19605,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-07330RL"
-			(at 201.93 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 201.93 30.48 0)
 			(effects
@@ -18277,6 +19625,24 @@
 		)
 		(property "Sim.Pins" ""
 			(at 201.93 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C105881"
+			(at 201.93 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-07330RL"
+			(at 201.93 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18329,7 +19695,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 163.83 232.41 0)
 			(effects
 				(font
@@ -18348,15 +19714,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 163.83 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 163.83 232.41 0)
 			(effects
 				(font
@@ -18384,6 +19741,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 163.83 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 163.83 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 163.83 232.41 0)
 			(effects
 				(font
@@ -18502,7 +19877,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 340.36 36.83 0)
 			(effects
 				(font
@@ -18521,15 +19896,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 340.36 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 340.36 36.83 0)
 			(effects
 				(font
@@ -18565,6 +19931,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Part #" "C14663"
+			(at 340.36 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
+			(at 340.36 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "54439bb9-3b20-40d3-b787-f4e1cd10dec6")
 		)
@@ -18585,7 +19969,7 @@
 		(at 152.4 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -18633,16 +20017,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "DS1023-2*20SF11"
-			(at 152.4 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "CONNFLY Elec"
+		(property "Manufacturer" "-"
 			(at 152.4 133.35 0)
 			(effects
 				(font
@@ -18652,6 +20027,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 152.4 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 152.4 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "-"
 			(at 152.4 133.35 0)
 			(effects
 				(font
@@ -18819,7 +20212,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 104.14 232.41 0)
 			(effects
 				(font
@@ -18838,15 +20231,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 104.14 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 104.14 232.41 0)
 			(effects
 				(font
@@ -18874,6 +20258,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 104.14 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 104.14 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 104.14 232.41 0)
 			(effects
 				(font
@@ -18950,15 +20352,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "EVQP2R02M"
-			(at 261.62 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "Panasonic"
 			(at 261.62 54.61 0)
 			(effects
@@ -18978,6 +20371,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 261.62 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C79161"
+			(at 261.62 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "EVQP2R02M"
 			(at 261.62 54.61 0)
 			(effects
 				(font
@@ -19057,15 +20468,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CC0603KRX5R5BB225"
-			(at 292.1 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 292.1 234.95 0)
 			(effects
@@ -19086,6 +20488,24 @@
 		)
 		(property "Sim.Pins" ""
 			(at 292.1 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C106213"
+			(at 292.1 234.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX5R6BB225"
+			(at 292.1 234.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19164,15 +20584,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CC0603KRX5R5BB225"
-			(at 292.1 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 292.1 232.41 0)
 			(effects
@@ -19193,6 +20604,24 @@
 		)
 		(property "Sim.Pins" ""
 			(at 292.1 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C106213"
+			(at 292.1 232.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX5R6BB225"
+			(at 292.1 232.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19337,15 +20766,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RT0603BRD075K1L"
-			(at 25.4 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 25.4 134.62 0)
 			(effects
@@ -19365,6 +20785,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 25.4 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C122969"
+			(at 25.4 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RT0603BRD075K1L"
 			(at 25.4 134.62 90)
 			(effects
 				(font
@@ -19709,15 +21147,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CC0603KRX7R8BB223"
-			(at 135.89 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 135.89 260.35 0)
 			(effects
@@ -19737,6 +21166,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 135.89 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C106217"
+			(at 135.89 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R8BB223"
 			(at 135.89 260.35 0)
 			(effects
 				(font
@@ -19779,7 +21226,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 100.33 270.5099 90)
 			(effects
 				(font
@@ -20026,6 +21473,149 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Switching:TPS62133")
+		(at 41.91 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68bc51d5-7b4c-4b95-8461-7ffc111ec73e")
+		(property "Reference" "U8"
+			(at 44.0533 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPS62133"
+			(at 44.0533 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias"
+			(at 45.72 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps62130.pdf"
+			(at 41.91 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3A Step-Down Converter with DCS-Control, Fixed 5.0V Output Voltage, 3-17V Input Voltage, QFN-16"
+			(at 41.91 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C73973"
+			(at 41.91 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "TPS62133RGTR"
+			(at 41.91 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 41.91 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "ef7c0c23-0d86-4063-8f98-670e42a661ab")
+		)
+		(pin "8"
+			(uuid "92b3a61a-9cc3-4a02-b1ec-6f410dd54055")
+		)
+		(pin "3"
+			(uuid "4f60f919-00e0-4ac4-8947-135ac655c164")
+		)
+		(pin "2"
+			(uuid "e6a04746-d777-4dfb-8fab-10fa21732a78")
+		)
+		(pin "14"
+			(uuid "830c8f18-3adc-4eb1-b366-083d7a6b8c4f")
+		)
+		(pin "13"
+			(uuid "d8bd8ea2-1314-4c7c-9d9c-1520cc06df55")
+		)
+		(pin "1"
+			(uuid "d702aad8-1146-4dbf-8170-68f8b8b43aed")
+		)
+		(pin "6"
+			(uuid "27372cd8-f4ce-45ca-864c-e998ea8437c9")
+		)
+		(pin "16"
+			(uuid "ee31f68b-457e-4489-aff9-ec75940244a3")
+		)
+		(pin "11"
+			(uuid "fba6538f-16e4-431c-bbb9-0e738ab5f41e")
+		)
+		(pin "10"
+			(uuid "ac8b5c00-00aa-440a-a7a9-27a8ea036556")
+		)
+		(pin "5"
+			(uuid "96e50d85-236a-46df-9c24-3ad03bdb15c2")
+		)
+		(pin "7"
+			(uuid "dddabacc-350d-490a-b06d-1523cf90c012")
+		)
+		(pin "4"
+			(uuid "65241a1d-2fd9-4c7c-a6e4-b7ca791824ba")
+		)
+		(pin "17"
+			(uuid "f834697d-ba82-4a38-9910-ee4b38c303e9")
+		)
+		(pin "15"
+			(uuid "9c4c4e8d-2518-48dc-81d8-a4f8a107c6fa")
+		)
+		(pin "12"
+			(uuid "4d3be87f-ab33-4b5f-97d8-8db5584259af")
+		)
+		(instances
+			(project ""
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 104.14 250.19 180)
 		(unit 1)
@@ -20213,15 +21803,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RT0603BRD075K1L"
-			(at 58.42 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 58.42 142.24 0)
 			(effects
@@ -20241,6 +21822,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 58.42 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C122969"
+			(at 58.42 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RT0603BRD075K1L"
 			(at 58.42 142.24 90)
 			(effects
 				(font
@@ -20386,15 +21985,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-07100RL"
-			(at 201.93 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 201.93 40.64 0)
 			(effects
@@ -20415,6 +22005,24 @@
 		)
 		(property "Sim.Pins" ""
 			(at 201.93 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C105588"
+			(at 201.93 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-07100RL"
+			(at 201.93 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20456,7 +22064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+12V"
 			(at 59.69 132.0799 90)
 			(effects
 				(font
@@ -20534,7 +22142,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 353.06 36.83 0)
 			(effects
 				(font
@@ -20553,15 +22161,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 353.06 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 353.06 36.83 0)
 			(effects
 				(font
@@ -20589,6 +22188,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 353.06 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 353.06 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 353.06 36.83 0)
 			(effects
 				(font
@@ -20839,7 +22456,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 289.56 43.18 0)
 			(effects
 				(font
@@ -20858,15 +22475,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 289.56 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 289.56 43.18 0)
 			(effects
 				(font
@@ -20894,6 +22502,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 289.56 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 289.56 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 289.56 43.18 0)
 			(effects
 				(font
@@ -20982,7 +22608,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TJA1042T/1J"
+		(property "Manufacturer" "NXP Semicon"
 			(at 104.14 260.35 0)
 			(effects
 				(font
@@ -20991,7 +22617,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "NXP Semicon"
+		(property "JLCPCB Part #" "C53670"
+			(at 104.14 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "TJA1042T/1J"
 			(at 104.14 260.35 0)
 			(effects
 				(font
@@ -21129,7 +22764,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 317.5 36.83 0)
 			(effects
 				(font
@@ -21148,15 +22783,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 317.5 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 317.5 36.83 0)
 			(effects
 				(font
@@ -21184,6 +22810,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 317.5 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 317.5 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 317.5 36.83 0)
 			(effects
 				(font
@@ -21263,15 +22907,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CC0603KRX5R5BB225"
-			(at 292.1 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 292.1 229.87 0)
 			(effects
@@ -21292,6 +22927,24 @@
 		)
 		(property "Sim.Pins" ""
 			(at 292.1 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C106213"
+			(at 292.1 229.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX5R6BB225"
+			(at 292.1 229.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21333,7 +22986,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PWR"
+		(property "Value" "3.3V"
 			(at 82.55 15.8749 90)
 			(effects
 				(font
@@ -21369,15 +23022,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "-"
-			(at 81.28 13.97 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer Part" ""
 			(at 81.28 13.97 90)
 			(effects
@@ -21405,6 +23049,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Part #" ""
+			(at 81.28 13.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "-"
+			(at 81.28 13.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "547daba6-79bc-4ed4-bfd3-78d5f0e77e48")
 		)
@@ -21415,6 +23077,73 @@
 			(project ""
 				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 52.07 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ed9b3cc-d7d7-4aff-b55a-26f780a75f6c")
+		(property "Reference" "#PWR0117"
+			(at 25.4 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 52.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2629cea-9b9b-4d98-b0c9-b0bf2224c44c")
+		)
+		(instances
+			(project "Asius2"
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -21684,7 +23413,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TJA1042T/1J"
+		(property "Manufacturer" "NXP Semicon"
 			(at 163.83 219.71 0)
 			(effects
 				(font
@@ -21693,7 +23422,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "NXP Semicon"
+		(property "JLCPCB Part #" "C53670"
+			(at 163.83 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "TJA1042T/1J"
 			(at 163.83 219.71 0)
 			(effects
 				(font
@@ -22054,15 +23792,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CC0603KRX7R8BB223"
-			(at 76.2 219.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 76.2 219.71 0)
 			(effects
@@ -22082,6 +23811,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 76.2 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C106217"
+			(at 76.2 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R8BB223"
 			(at 76.2 219.71 0)
 			(effects
 				(font
@@ -22135,7 +23882,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 322.58 36.83 0)
 			(effects
 				(font
@@ -22154,15 +23901,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 322.58 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 322.58 36.83 0)
 			(effects
 				(font
@@ -22190,6 +23928,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 322.58 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 322.58 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 322.58 36.83 0)
 			(effects
 				(font
@@ -22335,15 +24091,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0710KL"
-			(at 284.48 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 284.48 43.18 0)
 			(effects
@@ -22363,6 +24110,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 284.48 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C98220 "
+			(at 284.48 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-0710KL"
 			(at 284.48 43.18 0)
 			(effects
 				(font
@@ -22483,7 +24248,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 163.83 273.05 0)
 			(effects
 				(font
@@ -22502,15 +24267,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 163.83 273.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 163.83 273.05 0)
 			(effects
 				(font
@@ -22538,6 +24294,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 163.83 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 163.83 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 163.83 273.05 0)
 			(effects
 				(font
@@ -22627,110 +24401,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Bridged")
-		(at 50.8 34.29 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "951cf6b0-67d7-4e6a-b657-b750e3b1eeee")
-		(property "Reference" "JP1"
-			(at 50.8 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 50.8 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
-			(at 50.8 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
-			(at 50.8 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part" ""
-			(at 50.8 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 50.8 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "-"
-			(at 50.8 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "-"
-			(at 50.8 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "614e72b2-bc4d-441b-a55b-8adfc95fc4fc")
-		)
-		(pin "1"
-			(uuid "f61ec6a1-7ccb-4d3a-a85b-f2364d416161")
-		)
-		(instances
-			(project "Asius1"
-				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
-					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x05_Pin")
 		(at 224.79 251.46 0)
 		(unit 1)
@@ -22783,7 +24453,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "-"
+		(property "Manufacturer" "-"
 			(at 224.79 251.46 0)
 			(effects
 				(font
@@ -22792,7 +24462,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "-"
+		(property "JLCPCB Part #" ""
+			(at 224.79 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "-"
 			(at 224.79 251.46 0)
 			(effects
 				(font
@@ -22881,15 +24560,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CC0603JRNPO9BN150"
-			(at 280.67 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 280.67 69.85 0)
 			(effects
@@ -22909,6 +24579,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 280.67 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C107037"
+			(at 280.67 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603JRNPO9BN150"
 			(at 280.67 69.85 0)
 			(effects
 				(font
@@ -23120,15 +24808,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CC0603KRX7R8BB223"
-			(at 135.89 219.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 135.89 219.71 0)
 			(effects
@@ -23148,6 +24827,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 135.89 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C106217"
+			(at 135.89 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R8BB223"
 			(at 135.89 219.71 0)
 			(effects
 				(font
@@ -23294,15 +24991,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0762RL"
-			(at 142.24 257.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 142.24 257.81 0)
 			(effects
@@ -23322,6 +25010,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 142.24 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C245989"
+			(at 142.24 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-0762RL"
 			(at 142.24 257.81 0)
 			(effects
 				(font
@@ -23400,15 +25106,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-07100RL"
-			(at 201.93 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 201.93 35.56 0)
 			(effects
@@ -23429,6 +25126,24 @@
 		)
 		(property "Sim.Pins" ""
 			(at 201.93 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C105588"
+			(at 201.93 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-07100RL"
+			(at 201.93 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23652,7 +25367,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:AMS1117-3.3")
-		(at 30.48 34.29 0)
+		(at 124.46 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23661,7 +25376,7 @@
 		(fields_autoplaced yes)
 		(uuid "a5dd4874-0998-4b71-bd37-5bd8efa654a2")
 		(property "Reference" "U1"
-			(at 30.48 27.94 0)
+			(at 124.46 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23669,7 +25384,7 @@
 			)
 		)
 		(property "Value" "AMS1117-3.3"
-			(at 30.48 30.48 0)
+			(at 124.46 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23677,7 +25392,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 30.48 29.21 0)
+			(at 124.46 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23686,7 +25401,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-			(at 33.02 40.64 0)
+			(at 127 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23695,16 +25410,7 @@
 			)
 		)
 		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
-			(at 30.48 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AMS1117-3.3"
-			(at 30.48 34.29 0)
+			(at 124.46 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23713,7 +25419,7 @@
 			)
 		)
 		(property "Manufacturer" "Advanced Monolithic Systems"
-			(at 30.48 34.29 0)
+			(at 124.46 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23722,7 +25428,7 @@
 			)
 		)
 		(property "Manufacturer Part" ""
-			(at 30.48 34.29 0)
+			(at 124.46 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23731,7 +25437,25 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 30.48 34.29 0)
+			(at 124.46 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C6186"
+			(at 124.46 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "AMS1117-3.3"
+			(at 124.46 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23758,8 +25482,123 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 60.96 13.97 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9b72ebc-559e-440c-8db1-4d8efdac08f5")
+		(property "Reference" "J7"
+			(at 62.23 13.3349 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5V"
+			(at 62.23 15.8749 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 60.96 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 60.96 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 60.96 13.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 60.96 13.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "-"
+			(at 60.96 13.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 60.96 13.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "-"
+			(at 60.96 13.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "eb17fde6-05b3-4cfd-ae97-e837a539ab40")
+		)
+		(pin "1"
+			(uuid "dcc3446a-0cd5-4fce-bd09-2e230cdf3f83")
+		)
+		(instances
+			(project "Asius2"
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 38.1 29.21 180)
+		(at 132.08 40.64 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23768,7 +25607,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa914a07-9e50-4420-a0cb-7df43753ef68")
 		(property "Reference" "#PWR09"
-			(at 38.1 22.86 0)
+			(at 132.08 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23777,7 +25616,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 24.13 0)
+			(at 132.08 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23785,7 +25624,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 29.21 0)
+			(at 132.08 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23794,7 +25633,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 29.21 0)
+			(at 132.08 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23803,7 +25642,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 29.21 0)
+			(at 132.08 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23907,7 +25746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
+		(property "Value" "+12V"
 			(at 24.13 144.7799 90)
 			(effects
 				(font
@@ -24008,16 +25847,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "EVQP2R02M"
-			(at 287.02 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "PANASONIC"
+		(property "Manufacturer" "Panasonic"
 			(at 287.02 34.29 0)
 			(effects
 				(font
@@ -24036,6 +25866,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 287.02 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C79161"
+			(at 287.02 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "EVQP2R02M"
 			(at 287.02 34.29 0)
 			(effects
 				(font
@@ -24089,7 +25937,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 236.22 83.82 0)
 			(effects
 				(font
@@ -24108,15 +25956,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 236.22 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 236.22 83.82 0)
 			(effects
 				(font
@@ -24144,6 +25983,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 236.22 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 236.22 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 236.22 83.82 0)
 			(effects
 				(font
@@ -24303,7 +26160,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 30.48 41.91 0)
+		(at 124.46 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24312,7 +26169,7 @@
 		(fields_autoplaced yes)
 		(uuid "b233cf50-d685-4829-9389-574047aca9ca")
 		(property "Reference" "#PWR08"
-			(at 30.48 48.26 0)
+			(at 124.46 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24321,7 +26178,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 30.48 46.99 0)
+			(at 124.46 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24329,7 +26186,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 41.91 0)
+			(at 124.46 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24338,7 +26195,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 41.91 0)
+			(at 124.46 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24347,7 +26204,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 30.48 41.91 0)
+			(at 124.46 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24397,7 +26254,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 363.22 36.83 0)
 			(effects
 				(font
@@ -24416,15 +26273,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 363.22 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 363.22 36.83 0)
 			(effects
 				(font
@@ -24452,6 +26300,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 363.22 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 363.22 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 363.22 36.83 0)
 			(effects
 				(font
@@ -24661,15 +26527,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "STM32H725AGI6"
-			(at 342.9 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "STMicroelectronics"
 			(at 342.9 143.51 0)
 			(effects
@@ -24689,6 +26546,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 342.9 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C730148"
+			(at 342.9 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "STM32H725AGI6"
 			(at 342.9 143.51 0)
 			(effects
 				(font
@@ -25243,7 +27118,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 330.2 36.83 0)
 			(effects
 				(font
@@ -25262,15 +27137,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 330.2 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 330.2 36.83 0)
 			(effects
 				(font
@@ -25298,6 +27164,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 330.2 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 330.2 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 330.2 36.83 0)
 			(effects
 				(font
@@ -25441,15 +27325,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "X322525MOB4SI"
-			(at 280.67 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YXC Crystal Oscillators "
 			(at 280.67 76.2 90)
 			(effects
@@ -25469,6 +27344,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 280.67 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C9006"
+			(at 280.67 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "X322525MOB4SI"
 			(at 280.67 76.2 90)
 			(effects
 				(font
@@ -25528,7 +27421,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 360.68 36.83 0)
 			(effects
 				(font
@@ -25547,15 +27440,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 360.68 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 360.68 36.83 0)
 			(effects
 				(font
@@ -25591,6 +27475,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Part #" "C14663"
+			(at 360.68 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
+			(at 360.68 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "92c47227-4199-472c-b2cc-eee7ed9c1316")
 		)
@@ -25601,6 +27503,103 @@
 			(project "Asius2"
 				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
 					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 72.39 54.61 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5cf5a8c-527c-412c-be3b-7720860ee5ea")
+		(property "Reference" "C44"
+			(at 74.93 53.3335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "22uF"
+			(at 74.93 55.8735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 72.39 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 72.39 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C109448"
+			(at 72.39 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603MRX5R5BB226"
+			(at 72.39 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 72.39 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b4471d25-a223-4dea-8181-522366b6b559")
+		)
+		(pin "1"
+			(uuid "efa045f6-aa6c-494a-911f-f7cd098cc0b1")
+		)
+		(instances
+			(project "Asius2"
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -25659,7 +27658,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "SZYY1209RGB-B 4pin"
+		(property "Manufacturer" "Yongyu Photoelectric"
 			(at 209.55 35.56 0)
 			(effects
 				(font
@@ -25668,7 +27667,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yongyu Photoelectric"
+		(property "JLCPCB Part #" "C3029073"
+			(at 209.55 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "SZYY1209RGB-B 4pin"
 			(at 209.55 35.56 0)
 			(effects
 				(font
@@ -25693,6 +27701,72 @@
 			(project ""
 				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 41.91 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c78e4dfc-a66d-4fe7-9c50-dd4f2c42f5ee")
+		(property "Reference" "#PWR0115"
+			(at 41.91 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 41.91 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 41.91 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c2025c2-bfe9-40a8-aa5a-2067a65bdcb7")
+		)
+		(instances
+			(project ""
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -25892,6 +27966,72 @@
 			(project "Asius2"
 				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
 					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 78.74 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca0c552b-3ad8-470c-868c-a11dd264f762")
+		(property "Reference" "#FLG04"
+			(at 78.74 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 78.74 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 78.74 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78b5b085-131f-4ba5-8335-9e3991a505fe")
+		)
+		(instances
+			(project ""
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -26126,7 +28266,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 347.98 36.83 0)
 			(effects
 				(font
@@ -26145,15 +28285,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 347.98 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 347.98 36.83 0)
 			(effects
 				(font
@@ -26181,6 +28312,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 347.98 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 347.98 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 347.98 36.83 0)
 			(effects
 				(font
@@ -26266,6 +28415,72 @@
 			(project ""
 				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
 					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 19.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cff5cd88-6555-4475-b66a-8253c933e3b3")
+		(property "Reference" "#PWR0124"
+			(at 60.96 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 60.96 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 60.96 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23cfacd3-3685-4576-a3ca-7d7d2f27cf25")
+		)
+		(instances
+			(project "Asius2"
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -26591,15 +28806,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0710KL"
-			(at 271.78 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 271.78 57.15 0)
 			(effects
@@ -26619,6 +28825,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 271.78 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C98220 "
+			(at 271.78 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-0710KL"
 			(at 271.78 57.15 0)
 			(effects
 				(font
@@ -26940,7 +29164,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TYPE-C-31-M-04"
+		(property "JLCPCB Part #" "C129018"
+			(at 41.91 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "TYPE-C-31-M-04"
 			(at 41.91 138.43 0)
 			(effects
 				(font
@@ -27095,7 +29328,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RVT1A221M0605"
+		(property "Manufacturer" "Honor Elec"
 			(at 163.83 110.49 90)
 			(effects
 				(font
@@ -27104,7 +29337,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Honor Elec"
+		(property "JLCPCB Part #" "C3345"
+			(at 163.83 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RVT1A221M0605"
 			(at 163.83 110.49 90)
 			(effects
 				(font
@@ -27324,6 +29566,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 82.55 52.07 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc41876c-7518-4179-a20d-91f447e36b7d")
+		(property "Reference" "#PWR0121"
+			(at 78.74 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 86.36 52.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 82.55 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90d22b77-06d3-418e-9b0b-ed313429863d")
+		)
+		(instances
+			(project ""
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "#PWR0121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "1_my_custom_symbol_lib:MY_C_SMALL")
 		(at 280.67 82.55 0)
 		(unit 1)
@@ -27380,15 +29689,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CC0603JRNPO9BN150"
-			(at 280.67 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 280.67 82.55 0)
 			(effects
@@ -27408,6 +29708,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 280.67 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C107037"
+			(at 280.67 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603JRNPO9BN150"
 			(at 280.67 82.55 0)
 			(effects
 				(font
@@ -27794,7 +30112,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 342.9 36.83 0)
 			(effects
 				(font
@@ -27813,15 +30131,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 342.9 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 342.9 36.83 0)
 			(effects
 				(font
@@ -27849,6 +30158,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 342.9 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 342.9 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 342.9 36.83 0)
 			(effects
 				(font
@@ -28129,15 +30456,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0762RL"
-			(at 142.24 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 142.24 262.89 0)
 			(effects
@@ -28157,6 +30475,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 142.24 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C245989"
+			(at 142.24 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-0762RL"
 			(at 142.24 262.89 0)
 			(effects
 				(font
@@ -28242,72 +30578,6 @@
 			(project "Asius1"
 				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
 					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 66.04 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "edcc3233-0a00-4e8c-88ae-2d4a1589c091")
-		(property "Reference" "#FLG02"
-			(at 66.04 32.385 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 66.04 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 66.04 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 66.04 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "843bc043-3178-4914-9ced-275056cd4b01")
-		)
-		(instances
-			(project ""
-				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
-					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -28409,7 +30679,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 327.66 36.83 0)
 			(effects
 				(font
@@ -28428,15 +30698,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 327.66 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 327.66 36.83 0)
 			(effects
 				(font
@@ -28464,6 +30725,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 327.66 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 327.66 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 327.66 36.83 0)
 			(effects
 				(font
@@ -28540,7 +30819,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "-"
+		(property "Manufacturer" "-"
 			(at 224.79 226.06 0)
 			(effects
 				(font
@@ -28549,7 +30828,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "-"
+		(property "JLCPCB Part #" ""
+			(at 224.79 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "-"
 			(at 224.79 226.06 0)
 			(effects
 				(font
@@ -28589,8 +30877,75 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 26.67 49.53 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0ffe347-2ede-49de-a4c0-6a3f3149c1ca")
+		(property "Reference" "#PWR0119"
+			(at 20.32 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 22.86 49.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 26.67 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3fead06f-2635-4dae-ab5c-ae3875a9c081")
+		)
+		(instances
+			(project "Asius2"
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "#PWR0119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "1_my_custom_symbol_lib:MY_C_SMALL")
-		(at 22.86 31.75 0)
+		(at 116.84 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28599,7 +30954,7 @@
 		(fields_autoplaced yes)
 		(uuid "f3cadcb2-05fa-46b6-a6e3-b3780143872b")
 		(property "Reference" "C1"
-			(at 23.114 30.48 0)
+			(at 117.094 41.91 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -28609,7 +30964,7 @@
 			)
 		)
 		(property "Value" "10pF"
-			(at 23.114 33.02 0)
+			(at 117.094 44.45 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -28619,7 +30974,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 22.86 31.75 0)
+			(at 116.84 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28628,7 +30983,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 22.86 31.75 0)
+			(at 116.84 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28637,16 +30992,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 22.86 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0603JRNPO9BN100"
-			(at 22.86 31.75 0)
+			(at 116.84 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28655,7 +31001,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 22.86 31.75 0)
+			(at 116.84 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28664,7 +31010,7 @@
 			)
 		)
 		(property "Manufacturer Part" ""
-			(at 22.86 31.75 0)
+			(at 116.84 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28673,7 +31019,25 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 22.86 31.75 0)
+			(at 116.84 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C106245"
+			(at 116.84 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603JRNPO9BN100"
+			(at 116.84 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28764,6 +31128,72 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
+		(at 58.42 19.05 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f58c00d1-5b82-45e2-98c4-6a2fc143c097")
+		(property "Reference" "#PWR0118"
+			(at 58.42 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 58.42 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 58.42 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9908d8c0-c1c3-4862-a032-79418cb8273b")
+		)
+		(instances
+			(project "Asius2"
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "#PWR0118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
 		(at 104.14 229.87 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28781,7 +31211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 100.33 229.8699 90)
 			(effects
 				(font
@@ -28894,7 +31324,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TJA1042T/1J"
+		(property "Manufacturer" "NXP Semicon"
 			(at 163.83 260.35 0)
 			(effects
 				(font
@@ -28903,7 +31333,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "NXP Semicon"
+		(property "JLCPCB Part #" "C53670"
+			(at 163.83 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "TJA1042T/1J"
 			(at 163.83 260.35 0)
 			(effects
 				(font
@@ -28975,7 +31414,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 368.3 36.83 0)
 			(effects
 				(font
@@ -28994,15 +31433,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 368.3 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 368.3 36.83 0)
 			(effects
 				(font
@@ -29030,6 +31460,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 368.3 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 368.3 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 368.3 36.83 0)
 			(effects
 				(font
@@ -29214,7 +31662,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 358.14 36.83 0)
 			(effects
 				(font
@@ -29233,15 +31681,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 358.14 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CC0402KRX7R7BB104"
 			(at 358.14 36.83 0)
 			(effects
 				(font
@@ -29269,6 +31708,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 358.14 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 358.14 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "CC0603KRX7R9BB104"
 			(at 358.14 36.83 0)
 			(effects
 				(font
@@ -29426,6 +31883,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 36.83 31.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "feb807c2-4d84-4ae7-a9ba-ff3a092a4e63")
+		(property "Reference" "#PWR0122"
+			(at 30.48 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.02 31.7499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 36.83 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38852460-a300-407f-844f-1b957b3d4626")
+		)
+		(instances
+			(project "Asius2"
+				(path "/c427f881-4211-43b6-9155-a5bf29a59f45"
+					(reference "#PWR0122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "1_my_custom_symbol_lib:MY_R_SMALL")
 		(at 82.55 257.81 180)
 		(unit 1)
@@ -29481,15 +32005,6 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0762RL"
-			(at 82.55 257.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "YAGEO"
 			(at 82.55 257.81 0)
 			(effects
@@ -29509,6 +32024,24 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 82.55 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C245989"
+			(at 82.55 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RC0603FR-0762RL"
 			(at 82.55 257.81 0)
 			(effects
 				(font
@@ -29585,7 +32118,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "-"
+		(property "Manufacturer" "-"
 			(at 223.52 204.47 0)
 			(effects
 				(font
@@ -29594,7 +32127,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "-"
+		(property "JLCPCB Part #" ""
+			(at 223.52 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "-"
 			(at 223.52 204.47 0)
 			(effects
 				(font
