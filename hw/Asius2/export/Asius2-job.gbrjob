@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "9.0.4"
     },
-    "CreationDate": "2025-09-29T16:36:38+03:00"
+    "CreationDate": "2025-09-29T22:44:47+03:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -31,8 +31,8 @@
     },
     {
       "Layers": "Inner",
-      "PadToPad": 0.0762,
-      "PadToTrack": 0.0762,
+      "PadToPad": 0.0,
+      "PadToTrack": 0.0,
       "TrackToTrack": 0.0762,
       "MinLineWidth": 0.1,
       "TrackToRegion": 0.2,
@@ -56,7 +56,7 @@
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Asius2-3_3V.gbr",
+      "Path": "Asius2-PWR.gbr",
       "FileFunction": "Copper,L9,Inr",
       "FilePolarity": "Positive"
     },
@@ -153,20 +153,20 @@
       "Type": "Dielectric",
       "Thickness": 0.1,
       "Material": "FR4",
-      "Name": "SIGNAL2/3.3V",
-      "Notes": "Type: dielectric layer 3 (from SIGNAL2 to 3.3V)"
+      "Name": "SIGNAL2/PWR",
+      "Notes": "Type: dielectric layer 3 (from SIGNAL2 to PWR)"
     },
     {
       "Type": "Copper",
       "Thickness": 0.035,
-      "Name": "3.3V"
+      "Name": "PWR"
     },
     {
       "Type": "Dielectric",
       "Thickness": 0.535,
       "Material": "FR4",
-      "Name": "3.3V/GND2",
-      "Notes": "Type: dielectric layer 4 (from 3.3V to GND2)"
+      "Name": "PWR/GND2",
+      "Notes": "Type: dielectric layer 4 (from PWR to GND2)"
     },
     {
       "Type": "Copper",
