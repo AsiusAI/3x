@@ -126,3 +126,21 @@ sudo apt install tmux
 sudo mkdir /data && sudo chown ubuntu /data
 
 sudo apt install xserver-xorg openbox xterm mesa-utils xinit
+
+
+
+
+
+# DEV=GPU (on ubuntu-rockchip)
+
+
+sudo add-apt-repository ppa:liujianfeng1994/panfork-mesa
+sudo add-apt-repository ppa:liujianfeng1994/rockchip-multimedia
+sudo apt update
+
+sudo apt install rockchip-multimedia-config
+sudo apt install libmali-g610-x11
+
+sudo reboot
+
+clinfo
