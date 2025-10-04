@@ -47,12 +47,12 @@ v4l2-ctl -d /dev/video33 --set-fmt-video=width=4224,height=3136,pixelformat='NV1
 ```
 
 
-## For building Armbian OS (not used currently)
+## For building Armbian OS
 
 ```
 git clone https://github.com/armbian/build && cd armbian-build
 
-./compile.sh BOARD=orangepi5-ultra RELEASE=noble BUILD_MINIMAL=yes BRANCH=vendor NETWORKING_STACK="network-manager" PREFER_DOCKER=no KERNEL_CONFIGURE=no
+./compile.sh BOARD=orangepi5-ultra RELEASE=noble BUILD_DESKTOP=yes BRANCH=vendor NETWORKING_STACK="network-manager" PREFER_DOCKER=no KERNEL_CONFIGURE=no
 
 sudo dd if=output/images/Armbian-unofficial_25.11.0-trunk_Orangepi5-ultra_noble_vendor_6.1.115_minimal.img of=/dev/sda bs=4M status=progress conv=fsync
 ```
@@ -131,7 +131,7 @@ sudo apt install xserver-xorg openbox xterm mesa-utils xinit
 
 
 
-# DEV=GPU (on ubuntu-rockchip)
+# DEV=GPU (on orangepi official os)
 
 
 sudo add-apt-repository ppa:liujianfeng1994/panfork-mesa
@@ -144,3 +144,47 @@ sudo apt install libmali-g610-x11
 sudo reboot
 
 clinfo
+
+
+
+# OS problems
+
+## Orange Pi 1.0.0 Jammy with Linux 5.10.160-rockchip-rk3588 from OrangePi website
+
+Pros:
+- desktop with display works
+- openpilot with panda works
+- GPU=1 works in tinygrad
+
+Cons:
+- can't get any image from cameras, but they are recognized in dmesg
+- larger OS
+- no way to build it myself
+- no community support
+
+
+## ubuntu-rockchip
+
+Pros:
+- can build it myself (although it takes very long)
+- cameras work fine, even IMX415
+- not sure but maybe even openpilot worked
+
+Cons:
+- development stopped
+- large OS
+- build
+
+## Armbian
+
+Pros:
+- build easy and fast
+- small OS
+- will receive updates
+
+Cons:
+- cameras not working (because rkif and rkisp don't exist)
+
+Unknown:
+- openpilot
+- GPU=1 tinygrad
