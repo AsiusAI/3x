@@ -118,7 +118,7 @@ sudo apt install libx11-dev libxcursor-dev libxrandr-dev libxi-dev libxinerama-d
 ./tools/op.sh build
 
 
-mkdir -p /home/ubuntu/.comma/persist/comma/ && ssh-keygen -t rsa -N "" -f /home/ubuntu/.comma/persist/comma/id_rsa
+mkdir -p /home/orangepi/.comma/persist/comma/ && ssh-keygen -t rsa -N "" -f /home/orangepi/.comma/persist/comma/id_rsa
 
 
 sudo apt install tmux
@@ -131,17 +131,15 @@ sudo apt install xserver-xorg openbox xterm mesa-utils xinit
 
 
 
-# DEV=GPU (on orangepi official os)
+# tinygrad GPU=1 (on armbian)
 
+wget -qO - https://download.opensuse.org/repositories/home:/amazingfate:/panfork-mesa/Debian_12/Release.key | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/panfork-mesa.gpg
 
-sudo add-apt-repository ppa:liujianfeng1994/panfork-mesa
-sudo add-apt-repository ppa:liujianfeng1994/rockchip-multimedia
+echo "deb [trusted=yes] https://download.opensuse.org/repositories/home:/amazingfate:/panfork-mesa/Debian_12/ /" | sudo tee /etc/apt/sources.list.d/panfork-mesa.list
+
 sudo apt update
 
-sudo apt install rockchip-multimedia-config
-sudo apt install libmali-g610-x11
-
-sudo reboot
+sudo apt install mali-g610-firmware libmali-g610-x11
 
 clinfo
 
@@ -181,10 +179,7 @@ Pros:
 - build easy and fast
 - small OS
 - will receive updates
+- openpilot works with webcam, GPU=1 works
 
 Cons:
 - cameras not working (because rkif and rkisp don't exist)
-
-Unknown:
-- openpilot
-- GPU=1 tinygrad
