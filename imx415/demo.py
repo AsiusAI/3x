@@ -1,6 +1,6 @@
 import cv2
 
-cap = cv2.VideoCapture("/dev/video51")
+cap = cv2.VideoCapture("/dev/video0")
 # cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('U', 'Y', 'V', 'Y'))
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
@@ -12,6 +12,7 @@ try:
     while True:
         ret, frame = cap.read()
         if not ret:
+            print("failed")
             break
 
         out.write(frame)

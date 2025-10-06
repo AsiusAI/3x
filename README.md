@@ -42,6 +42,7 @@ dmesg | grep ov13855
 # Should show something like `Detected OV00d855 sensor, REVISION 0xb0`
 
 # Get test image
+sudo apt install v4l-utils -y
 # To find the device use `v4l2-ctl --list-devices` (the first dev from rkisp_mainpath)
 v4l2-ctl -d /dev/video33 --set-fmt-video=width=4224,height=3136,pixelformat='NV12' --stream-mmap --stream-skip=10 --stream-count=1 --stream-to=processed.yuv && ffmpeg -f rawvideo -pix_fmt nv12 -s 4224x3136 -i processed.yuv -y img.jpg
 ```
@@ -183,3 +184,20 @@ Pros:
 
 Cons:
 - cameras not working (because rkif and rkisp don't exist)
+
+
+## RKNN yolov8 example working
+
+cd ~/rknn_model_zoo/examples/yolov8
+
+pip install rknn-toolkit2
+
+./model/download_model.sh
+
+cd python && python convert.py ../model/yolov8n.onnx rk3588
+
+wget https://github.com/rockchip-linux/rknpu2/raw/refs/heads/master/runtime/RK3588/Linux/librknn_api/aarch64/librknnrt.so && sudo mv librknnrt.so /usr/lib/
+
+python yolov8.py --model_path ../model/yolov8.rknn --target rk3588
+
+output: ~/rknn_model_zoo/examples/yolov8/result.png
