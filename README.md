@@ -47,15 +47,20 @@ sudo apt install v4l-utils -y
 v4l2-ctl -d /dev/video33 --set-fmt-video=width=4224,height=3136,pixelformat='NV12' --stream-mmap --stream-skip=10 --stream-count=1 --stream-to=processed.yuv && ffmpeg -f rawvideo -pix_fmt nv12 -s 4224x3136 -i processed.yuv -y img.jpg
 ```
 
+Install multimedia
+
+sudo add-apt-repository ppa:liujianfeng1994/rockchip-multimedia
+sudo apt update
+sudo apt install rockchip-multimedia-config
 
 ## For building Armbian OS
 
 ```
 git clone https://github.com/armbian/build && cd armbian-build
 
-./compile.sh BOARD=orangepi5-ultra RELEASE=noble BUILD_DESKTOP=yes DESKTOP_ENVIRONMENT=gnome DESKTOP_APPGROUPS_SELECTED='' DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base BRANCH=vendor NETWORKING_STACK="network-manager" PREFER_DOCKER=no KERNEL_CONFIGURE=no
+./compile.sh BOARD=orangepi5-ultra RELEASE=noble BUILD_DESKTOP=yes DESKTOP_ENVIRONMENT=xfce DESKTOP_APPGROUPS_SELECTED='multimedia' DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base BRANCH=vendor NETWORKING_STACK="network-manager" PREFER_DOCKER=no KERNEL_CONFIGURE=no
 
-sudo dd if=output/images/Armbian-unofficial_25.11.0-trunk_Orangepi5-ultra_noble_vendor_6.1.115_gnome_desktop.img of=/dev/sda bs=4M status=progress conv=fsync
+sudo dd if=output/images/Armbian-unofficial_25.11.0-trunk_Orangepi5-ultra_noble_vendor_6.1.115_xfce_desktop.img of=/dev/sda bs=4M status=progress conv=fsync
 ```
 
 
@@ -89,20 +94,7 @@ cd ~/3x/openpilot/third_party/raylib && ./build.sh
 
 ./launch_openpilot.sh
 
-## Todo
-
-- fix the max vs ultra 2nd hdmi display issue
-- op fullscreen
-- op use imx415
-- run op on boot and without a login screen
-- use ubuntu-rockchip server version?
-- op working with panda
-- 
-
-
-
-
-
+## OP working
 
 sudo apt update
 
@@ -137,6 +129,8 @@ sudo apt install xserver-xorg openbox xterm mesa-utils xinit
 wget -qO - https://download.opensuse.org/repositories/home:/amazingfate:/panfork-mesa/Debian_12/Release.key | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/panfork-mesa.gpg
 
 echo "deb [trusted=yes] https://download.opensuse.org/repositories/home:/amazingfate:/panfork-mesa/Debian_12/ /" | sudo tee /etc/apt/sources.list.d/panfork-mesa.list
+
+or `sudo add-apt-repository ppa:liujianfeng1994/panfork-mesa` ???
 
 sudo apt update
 
