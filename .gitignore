@@ -1,8 +1,6 @@
 .DS_Store
 .venv/
 *.avi
-*.dtbo
-*.dtb
 *.txt
 
 *-backups/
