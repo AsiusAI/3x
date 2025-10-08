@@ -1,0 +1,136 @@
+ubuntu@ubuntu:~$ dmesg | grep ov13855
+[   23.487262] ov13855 6-0036: driver version: 00.01.04
+[   23.487694] ov13855 6-0036: Failed to get power-gpios, maybe no use
+[   23.488123] ov13855 6-0036: Looking up avdd-supply from device tree
+[   23.488127] ov13855 6-0036: Looking up avdd-supply property in node /i2c@fec80000/ov13855-0@36 failed
+[   23.488138] ov13855 6-0036: supply avdd not found, using dummy regulator
+[   23.488586] ov13855 6-0036: Looking up dovdd-supply from device tree
+[   23.488590] ov13855 6-0036: Looking up dovdd-supply property in node /i2c@fec80000/ov13855-0@36 failed
+[   23.488597] ov13855 6-0036: supply dovdd not found, using dummy regulator
+[   23.489025] ov13855 6-0036: Looking up dvdd-supply from device tree
+[   23.489029] ov13855 6-0036: Looking up dvdd-supply property in node /i2c@fec80000/ov13855-0@36 failed
+[   23.489036] ov13855 6-0036: supply dvdd not found, using dummy regulator
+[   23.489464] ov13855 6-0036: could not get default pinstate
+[   23.489877] ov13855 6-0036: could not get sleep pinstate
+[   23.499683] ov13855 6-0036: Detected OV00d855 sensor, REVISION 0xb0
+[   23.530266] ov13855 6-0036: Consider updating driver ov13855 to match on endpoints
+[   23.531590] rockchip-csi2-dphy csi2-dphy0: dphy0 matches m00_b_ov13855 6-0036:bus type 5
+ubuntu@ubuntu:~$ v4l2-ctl --list-devices
+rkisp-statistics (platform: rkisp):
+	/dev/video18
+	/dev/video19
+
+rkcif (platform:rkcif-mipi-lvds2):
+	/dev/video0
+	/dev/video1
+	/dev/video2
+	/dev/video3
+	/dev/video4
+	/dev/video5
+	/dev/video6
+	/dev/video7
+	/dev/video8
+	/dev/video9
+	/dev/video10
+	/dev/media0
+
+rkisp_mainpath (platform:rkisp0-vir2):
+	/dev/video11
+	/dev/video12
+	/dev/video13
+	/dev/video14
+	/dev/video15
+	/dev/video16
+	/dev/video17
+	/dev/media1
+
+ubuntu@ubuntu:~$ v4l2-ctl -d11 --all
+Driver Info:
+	Driver name      : rkisp_v6
+	Card type        : rkisp_mainpath
+	Bus info         : platform:rkisp0-vir2
+	Driver version   : 2.6.0
+	Capabilities     : 0x84201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x04201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+Media Driver Info:
+	Driver name      : rkisp0-vir2
+	Model            : rkisp0
+	Serial           :
+	Bus info         : platform:rkisp0-vir2
+	Media version    : 6.1.75
+	Hardware revision: 0x00000000 (0)
+	Driver version   : 6.1.75
+Interface Info:
+	ID               : 0x03000007
+	Type             : V4L Video
+Entity Info:
+	ID               : 0x00000006 (6)
+	Name             : rkisp_mainpath
+	Function         : V4L2 I/O
+	Pad 0x01000009   : 0: Sink
+	  Link 0x0200000a: from remote pad 0x1000004 of entity 'rkisp-isp-subdev' (Unknown V4L2 Sub-Device): Data, Enabled
+Priority: 2
+Format Video Capture Multiplanar:
+	Width/Height      : 3840/2160
+	Pixel Format      : 'NV12' (Y/UV 4:2:0)
+	Field             : None
+	Number of planes  : 1
+	Flags             :
+	Colorspace        : Default
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Full Range
+	Plane 0           :
+	   Bytes per Line : 3840
+	   Size Image     : 12441600
+Selection Video Capture: crop, Left 0, Top 0, Width 3840, Height 2160, Flags:
+Selection Video Capture: crop_bounds, Left 0, Top 0, Width 3840, Height 2160, Flags:
+Selection Video Output: crop, Left 0, Top 0, Width 3840, Height 2160, Flags:
+Selection Video Output: crop_bounds, Left 0, Top 0, Width 3840, Height 2160, Flags:
+
+Image Processing Controls
+
+                     pixel_rate 0x009f0902 (int64)  : min=0 max=1000000000 step=1 default=1000000000 value=356800000 flags=read-only, volatile
+ubuntu@ubuntu:~$ dmesg | grep rkcif
+[    5.474152] platform rkcif-mipi-lvds2: Fixed dependency cycle(s) with /mipi2-csi2/ports/port@1/endpoint@0
+[    5.474292] platform rkisp0-vir2: Fixed dependency cycle(s) with /rkcif-mipi-lvds2-sditf/port/endpoint
+[   23.125297] rkcifhw fdce0000.rkcif: Adding to iommu group 16
+[   23.128030] rkcifhw fdce0000.rkcif: No reserved memory region assign to CIF
+[   23.129338] rkcif rkcif-mipi-lvds2: Adding to iommu group 16
+[   23.130506] rkcif rkcif-mipi-lvds2: rkcif driver version: v00.02.00
+[   23.131716] rkcif rkcif-mipi-lvds2: attach to cif hw node
+[   23.132858] rkcif rkcif-mipi-lvds2: rkcif wait line 0
+[   23.133978] rkcif rkcif-mipi-lvds2: rkcif fastboot reserve bufs num 3
+[   23.140601] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   23.141686] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[   23.143867] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   23.144957] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[   23.147130] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   23.148220] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[   23.150400] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   23.151505] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[   23.153905] rkcif rkcif-mipi-lvds2: No memory-region-thunderboot specified
+[   23.171763] rkcif rkcif-mipi-lvds2: Entity type for entity rockchip-mipi-csi2 was not initialized!
+[   23.173956] rockchip-mipi-csi2: probe success, v4l2_dev:rkcif-mipi-lvds2!
+[   23.618811] rkcif rkcif-mipi-lvds2: clear unready subdev num: 3
+[   23.619183] rkcif-mipi-lvds2: Async subdev notifier completed
+ubuntu@ubuntu:~$ dmesg | grep rkisp
+[    5.474292] platform rkisp0-vir2: Fixed dependency cycle(s) with /rkcif-mipi-lvds2-sditf/port/endpoint
+[   23.176286] rkisp_hw fdcb0000.rkisp: Adding to iommu group 15
+[   23.177525] rkisp_hw fdcb0000.rkisp: is_thunderboot: 0
+[   23.178608] rkisp_hw fdcb0000.rkisp: Missing rockchip,grf property
+[   23.179708] rkisp_hw fdcb0000.rkisp: max input:0x0@0fps
+[   23.180920] rkisp_hw fdcb0000.rkisp: no find phandle sram
+[   23.182298] rkisp rkisp0-vir2: rkisp driver version: v02.06.00
+[   23.183456] rkisp rkisp0-vir2: No memory-region-thunderboot specified
+[   23.184630] rkisp rkisp0-vir2: Entity type for entity rkisp-isp-subdev was not initialized!
+[   23.619375] rkisp0-vir2: Async subdev notifier completed
+[   23.658925] rkisp rkisp0-vir2: clear unready subdev num: 0
+[   25.301395] rkisp rkisp0-vir2: first params buf queue
