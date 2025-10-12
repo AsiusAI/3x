@@ -53,6 +53,12 @@ sudo add-apt-repository ppa:liujianfeng1994/rockchip-multimedia
 sudo apt update
 sudo apt install rockchip-multimedia-config
 
+
+sudo add-apt-repository ppa:jjriek/rockchip-multimedia
+sudo apt update
+sudo apt install camera-engine-rkaiq-rk3588
+
+
 ## For building Armbian OS
 
 ```
