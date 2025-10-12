@@ -1,0 +1,572 @@
+orangepi@orangepi5-max:~$ uname -a
+Linux orangepi5-max 6.1.115-vendor-rk35xx #1 SMP Fri Oct  3 09:48:39 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+orangepi@orangepi5-max:~$ sudo cat /boot/armbianEnv.txt
+verbosity=1
+bootlogo=true
+console=both
+extraargs=cma=256M
+overlay_prefix=rockchip-rk3588
+fdtfile=rockchip/rk3588-orangepi-5-max.dtb
+rootdev=UUID=c351296c-cdaa-49ab-8d2d-7115cc1ec80c
+rootfstype=ext4
+overlays=orangepi-5-max-cam0
+usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
+orangepi@orangepi5-max:~$ dtc -I dtb -O dts /boot/dtb/rockchip/overlay/orangepi-5-max-cam0.dtbo
+<stdout>: Warning (unit_address_vs_reg): /fragment@6/__overlay__/vm149c-p0@c: node has a unit name, but no reg or ranges property
+<stdout>: Warning (unit_address_vs_reg): /fragment@6/__overlay__/ov13850-0@10: node has a unit name, but no reg or ranges property
+<stdout>: Warning (unit_address_vs_reg): /fragment@6/__overlay__/dw9714-p0@c: node has a unit name, but no reg or ranges property
+<stdout>: Warning (unit_address_vs_reg): /fragment@6/__overlay__/ov13855-0@36: node has a unit name, but no reg or ranges property
+<stdout>: Warning (unit_address_vs_reg): /fragment@6/__overlay__/imx415-0@1a: node has a unit name, but no reg or ranges property
+/dts-v1/;
+
+/ {
+
+	fragment@0 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@1 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@2 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@3 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@4 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@5 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@6 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+
+			vm149c-p0@c {
+				status = "okay";
+			};
+
+			ov13850-0@10 {
+				status = "okay";
+			};
+
+			dw9714-p0@c {
+				status = "okay";
+			};
+
+			ov13855-0@36 {
+				status = "okay";
+			};
+
+			imx415-0@1a {
+				status = "okay";
+			};
+		};
+	};
+
+	fragment@7 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@8 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@9 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	fragment@10 {
+		target = <0xffffffff>;
+
+		__overlay__ {
+			status = "okay";
+		};
+	};
+
+	__fixups__ {
+		csi2_dphy0_hw = "/fragment@0:target:0";
+		csi2_dphy0 = "/fragment@1:target:0";
+		mipi2_csi2 = "/fragment@2:target:0";
+		rkcif_mipi_lvds2 = "/fragment@3:target:0";
+		rkcif_mipi_lvds2_sditf = "/fragment@4:target:0";
+		rkisp0_vir2 = "/fragment@5:target:0";
+		i2c6 = "/fragment@6:target:0";
+		rkcif = "/fragment@7:target:0";
+		rkcif_mmu = "/fragment@8:target:0";
+		rkisp0 = "/fragment@9:target:0";
+		isp0_mmu = "/fragment@10:target:0";
+	};
+};
+orangepi@orangepi5-max:~$ dmesg | grep ov13855
+[   20.233943] platform csi2-dphy0: Fixed dependency cycle(s) with /i2c@fec80000/ov13855-0@36
+[   20.509050] ov13855 6-0036: driver version: 00.01.04
+[   20.509068] ov13855 6-0036: Failed to get power-gpios, maybe no use
+[   20.509082] ov13855 6-0036: Looking up avdd-supply from device tree
+[   20.509085] ov13855 6-0036: Looking up avdd-supply property in node /i2c@fec80000/ov13855-0@36 failed
+[   20.509094] ov13855 6-0036: supply avdd not found, using dummy regulator
+[   20.509123] ov13855 6-0036: Looking up dovdd-supply from device tree
+[   20.509126] ov13855 6-0036: Looking up dovdd-supply property in node /i2c@fec80000/ov13855-0@36 failed
+[   20.509132] ov13855 6-0036: supply dovdd not found, using dummy regulator
+[   20.509146] ov13855 6-0036: Looking up dvdd-supply from device tree
+[   20.509149] ov13855 6-0036: Looking up dvdd-supply property in node /i2c@fec80000/ov13855-0@36 failed
+[   20.509155] ov13855 6-0036: supply dvdd not found, using dummy regulator
+[   20.509165] ov13855 6-0036: could not get default pinstate
+[   20.509167] ov13855 6-0036: could not get sleep pinstate
+[   20.518458] ov13855 6-0036: Detected OV00d855 sensor, REVISION 0xb0
+[   21.045286] ov13855 6-0036: Consider updating driver ov13855 to match on endpoints
+[   21.045292] rockchip-csi2-dphy csi2-dphy0: dphy0 matches m00_b_ov13855 6-0036:bus type 5
+orangepi@orangepi5-max:~$ v4l2-ctl --list-devices
+rkisp-statistics (platform: rkisp):
+	/dev/video7
+	/dev/video8
+
+rkcif-mipi-lvds2 (platform:rkcif-mipi-lvds2):
+	/dev/media1
+
+rkisp_mainpath (platform:rkisp0-vir2):
+	/dev/video0
+	/dev/video1
+	/dev/video2
+	/dev/video3
+	/dev/video4
+	/dev/video5
+	/dev/video6
+	/dev/media0
+
+orangepi@orangepi5-max:~$ v4l2-ctl -d0 --all
+Driver Info:
+	Driver name      : rkisp_v6
+	Card type        : rkisp_mainpath
+	Bus info         : platform:rkisp0-vir2
+	Driver version   : 2.9.0
+	Capabilities     : 0x84201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x04201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+Media Driver Info:
+	Driver name      : rkisp0-vir2
+	Model            : rkisp0
+	Serial           :
+	Bus info         : platform:rkisp0-vir2
+	Media version    : 6.1.115
+	Hardware revision: 0x00000000 (0)
+	Driver version   : 6.1.115
+Interface Info:
+	ID               : 0x03000007
+	Type             : V4L Video
+Entity Info:
+	ID               : 0x00000006 (6)
+	Name             : rkisp_mainpath
+	Function         : V4L2 I/O
+	Pad 0x01000009   : 0: Sink
+	  Link 0x0200000a: from remote pad 0x1000004 of entity 'rkisp-isp-subdev' (Unknown V4L2 Sub-Device): Data, Enabled
+Priority: 2
+Format Video Capture Multiplanar:
+	Width/Height      : 800/600
+	Pixel Format      : 'NV12' (Y/UV 4:2:0)
+	Field             : None
+	Number of planes  : 1
+	Flags             :
+	Colorspace        : Default
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Full Range
+	Plane 0           :
+	   Bytes per Line : 800
+	   Size Image     : 720000
+Selection Video Capture: crop, Left 0, Top 0, Width 800, Height 600, Flags:
+Selection Video Capture: crop_bounds, Left 0, Top 0, Width 800, Height 600, Flags:
+Selection Video Output: crop, Left 0, Top 0, Width 800, Height 600, Flags:
+Selection Video Output: crop_bounds, Left 0, Top 0, Width 800, Height 600, Flags:
+orangepi@orangepi5-max:~$ dmesg | grep rkcif
+[    3.416980] platform mipi2-csi2: Fixed dependency cycle(s) with /rkcif-mipi-lvds2
+[    3.417005] platform rkcif-mipi-lvds2: Fixed dependency cycle(s) with /mipi2-csi2
+[    3.417128] platform rkcif-mipi-lvds2-sditf: Fixed dependency cycle(s) with /rkisp0-vir2
+[    3.417150] platform rkisp0-vir2: Fixed dependency cycle(s) with /rkcif-mipi-lvds2-sditf
+[   21.015900] rkcifhw fdce0000.rkcif: Adding to iommu group 16
+[   21.017322] rkcifhw fdce0000.rkcif: No reserved memory region assign to CIF
+[   21.019597] rkcif rkcif-mipi-lvds2: Adding to iommu group 16
+[   21.021971] rkcif rkcif-mipi-lvds2: rkcif driver version: v00.02.00
+[   21.025627] rkcif rkcif-mipi-lvds2: attach to cif hw node
+[   21.025634] rkcif rkcif-mipi-lvds2: rkcif wait line 0
+[   21.025636] rkcif rkcif-mipi-lvds2: rkcif fastboot reserve bufs num 3
+[   21.025656] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   21.025659] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[   21.025663] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   21.025665] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[   21.025669] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   21.025670] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[   21.025674] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   21.025676] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[   21.045271] rkcif rkcif-mipi-lvds2: Entity type for entity rockchip-mipi-csi2 was not initialized!
+[   21.045297] rkcif rkcif-mipi-lvds2: No memory-region-thunderboot specified
+[   23.243639] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   23.243648] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[3] get remote sensor_sd failed!
+[   23.244772] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   23.244785] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[1] get remote sensor_sd failed!
+[   23.246038] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   23.246048] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   23.246054] rkcif_scale_ch0: update sensor info failed -19
+[   23.251114] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   23.251121] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[2] get remote sensor_sd failed!
+[   23.251123] rkcif_tools_id2: update sensor info failed -19
+[   23.253338] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   23.253348] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[2] get remote sensor_sd failed!
+[   23.253905] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   23.253910] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   23.254220] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   23.254228] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   23.254233] rkcif_tools_id0: update sensor info failed -19
+[   23.255724] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   23.255728] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[1] get remote sensor_sd failed!
+[   23.255731] rkcif_tools_id1: update sensor info failed -19
+[   23.262116] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   23.262131] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[1] get remote sensor_sd failed!
+[   23.262137] rkcif_scale_ch1: update sensor info failed -19
+[   23.262682] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   23.262688] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[2] get remote sensor_sd failed!
+[   23.262691] rkcif_scale_ch2: update sensor info failed -19
+[   23.264046] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   23.264052] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[3] get remote sensor_sd failed!
+[   23.264054] rkcif_scale_ch3: update sensor info failed -19
+[   38.924175] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   38.924183] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[1] get remote sensor_sd failed!
+[   38.924207] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   38.924209] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[2] get remote sensor_sd failed!
+[   38.924227] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   38.924228] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[3] get remote sensor_sd failed!
+[   38.924247] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   38.924248] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   38.924250] rkcif_scale_ch0: update sensor info failed -19
+[   38.924266] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   38.924268] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[1] get remote sensor_sd failed!
+[   38.924270] rkcif_scale_ch1: update sensor info failed -19
+[   38.924283] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   38.924285] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[2] get remote sensor_sd failed!
+[   38.924287] rkcif_scale_ch2: update sensor info failed -19
+[   38.924301] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   38.924303] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[3] get remote sensor_sd failed!
+[   38.924304] rkcif_scale_ch3: update sensor info failed -19
+[   38.924317] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   38.924319] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   38.924321] rkcif_tools_id0: update sensor info failed -19
+[   38.924336] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   38.924338] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[1] get remote sensor_sd failed!
+[   38.924339] rkcif_tools_id1: update sensor info failed -19
+[   38.924354] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   38.924356] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[2] get remote sensor_sd failed!
+[   38.924358] rkcif_tools_id2: update sensor info failed -19
+[   38.924371] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   38.924373] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   48.519453] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   48.519461] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[1] get remote sensor_sd failed!
+[   48.519485] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   48.519487] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[2] get remote sensor_sd failed!
+[   48.519504] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   48.519505] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[3] get remote sensor_sd failed!
+[   48.519521] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   48.519523] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   48.519525] rkcif_scale_ch0: update sensor info failed -19
+[   48.519538] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   48.519539] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[1] get remote sensor_sd failed!
+[   48.519541] rkcif_scale_ch1: update sensor info failed -19
+[   48.519553] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   48.519555] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[2] get remote sensor_sd failed!
+[   48.519557] rkcif_scale_ch2: update sensor info failed -19
+[   48.519570] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   48.519572] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[3] get remote sensor_sd failed!
+[   48.519574] rkcif_scale_ch3: update sensor info failed -19
+[   48.519587] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   48.519588] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[   48.519590] rkcif_tools_id0: update sensor info failed -19
+[   48.519602] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   48.519604] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[1] get remote sensor_sd failed!
+[   48.519606] rkcif_tools_id1: update sensor info failed -19
+[   48.519618] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   48.519620] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[2] get remote sensor_sd failed!
+[   48.519622] rkcif_tools_id2: update sensor info failed -19
+[   48.519637] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[   48.519638] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[  404.481860] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[  404.481903] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[  404.482103] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[  404.482129] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[1] get remote sensor_sd failed!
+[  404.482226] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[  404.482248] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[2] get remote sensor_sd failed!
+[  404.482335] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[  404.482356] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[3] get remote sensor_sd failed!
+[  404.482442] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[  404.482464] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[  404.482486] rkcif_scale_ch0: update sensor info failed -19
+[  404.482550] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[  404.482571] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[1] get remote sensor_sd failed!
+[  404.482592] rkcif_scale_ch1: update sensor info failed -19
+[  404.482654] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[  404.482675] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[2] get remote sensor_sd failed!
+[  404.482696] rkcif_scale_ch2: update sensor info failed -19
+[  404.482757] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[  404.482778] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[3] get remote sensor_sd failed!
+[  404.482799] rkcif_scale_ch3: update sensor info failed -19
+[  404.482864] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[  404.482885] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[  404.482906] rkcif_tools_id0: update sensor info failed -19
+[  404.482972] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[  404.482992] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[1] get remote sensor_sd failed!
+[  404.483014] rkcif_tools_id1: update sensor info failed -19
+[  404.483076] rkcif-mipi-lvds2: get_remote_sensor: remote pad is null
+[  404.483097] rkcif-mipi-lvds2: rkcif_update_sensor_info: stream[2] get remote sensor_sd failed!
+[  404.483119] rkcif_tools_id2: update sensor info failed -19
+orangepi@orangepi5-max:~$ dmesg | grep rkisp
+[    3.417128] platform rkcif-mipi-lvds2-sditf: Fixed dependency cycle(s) with /rkisp0-vir2
+[    3.417150] platform rkisp0-vir2: Fixed dependency cycle(s) with /rkcif-mipi-lvds2-sditf
+[   20.242204] rkisp_hw fdcb0000.rkisp: Adding to iommu group 15
+[   20.242346] rkisp_hw fdcb0000.rkisp: is_thunderboot: 0
+[   20.242352] rkisp_hw fdcb0000.rkisp: Missing rockchip,grf property
+[   20.242367] rkisp_hw fdcb0000.rkisp: max input:0x0@0fps
+[   20.242489] rkisp_hw fdcb0000.rkisp: no find phandle sram
+[   20.242767] rkisp rkisp0-vir2: rkisp driver version: v02.09.00
+[   20.242839] rkisp rkisp0-vir2: No memory-region-thunderboot specified
+[   20.242940] rkisp rkisp0-vir2: Entity type for entity rkisp-isp-subdev was not initialized!
+[   20.666251] rkisp rkisp0-vir2: clear unready subdev num: 1
+[   20.666650] rkisp0-vir2: Async subdev notifier completed
+orangepi@orangepi5-max:~$ media-ctl -p -d /dev/media0
+Media controller API version 6.1.115
+
+Media device information
+------------------------
+driver          rkisp0-vir2
+model           rkisp0
+serial
+bus info        platform:rkisp0-vir2
+hw revision     0x0
+driver version  6.1.115
+
+Device topology
+- entity 1: rkisp-isp-subdev (4 pads, 9 links, 0 routes)
+            type V4L2 subdev subtype Unknown flags 0
+            device node name /dev/v4l-subdev0
+	pad0: Sink
+		[stream:0 fmt:SRGGB8_1X8/800x600 field:none
+		 crop.bounds:(0,0)/800x600
+		 crop:(0,0)/800x600]
+		<- "rkisp_rawrd0_m":0 []
+		<- "rkisp_rawrd2_s":0 []
+		<- "rkisp_rawrd1_l":0 []
+	pad1: Sink
+		<- "rkisp-input-params":0 [ENABLED]
+	pad2: Source
+		[stream:0 fmt:YUYV8_2X8/800x600 field:none colorspace:smpte170m quantization:full-range
+		 crop.bounds:(0,0)/800x600
+		 crop:(0,0)/800x600]
+		-> "rkisp_mainpath":0 [ENABLED]
+		-> "rkisp_selfpath":0 [ENABLED]
+		-> "rkisp_fbcpath":0 [ENABLED]
+		-> "rkisp_iqtool":0 [ENABLED]
+	pad3: Source
+		-> "rkisp-statistics":0 [ENABLED]
+
+- entity 6: rkisp_mainpath (1 pad, 1 link)
+            type Node subtype V4L flags 0
+            device node name /dev/video0
+	pad0: Sink
+		<- "rkisp-isp-subdev":2 [ENABLED]
+
+- entity 12: rkisp_selfpath (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video1
+	pad0: Sink
+		<- "rkisp-isp-subdev":2 [ENABLED]
+
+- entity 18: rkisp_fbcpath (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video2
+	pad0: Sink
+		<- "rkisp-isp-subdev":2 [ENABLED]
+
+- entity 24: rkisp_iqtool (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video3
+	pad0: Sink
+		<- "rkisp-isp-subdev":2 [ENABLED]
+
+- entity 30: rkisp_rawrd0_m (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video4
+	pad0: Source
+		-> "rkisp-isp-subdev":0 []
+
+- entity 36: rkisp_rawrd2_s (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video5
+	pad0: Source
+		-> "rkisp-isp-subdev":0 []
+
+- entity 42: rkisp_rawrd1_l (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video6
+	pad0: Source
+		-> "rkisp-isp-subdev":0 []
+
+- entity 48: rkisp-statistics (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video7
+	pad0: Sink
+		<- "rkisp-isp-subdev":3 [ENABLED]
+
+- entity 54: rkisp-input-params (1 pad, 1 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video8
+	pad0: Source
+		-> "rkisp-isp-subdev":1 [ENABLED]
+
+orangepi@orangepi5-max:~$ media-ctl -p -d /dev/media1
+Media controller API version 6.1.115
+
+Media device information
+------------------------
+driver          rkcif
+model           rkcif-mipi-lvds2
+serial
+bus info        platform:rkcif-mipi-lvds2
+hw revision     0x0
+driver version  6.1.115
+
+Device topology
+- entity 1: stream_cif_mipi_id0 (1 pad, 0 link)
+            type Node subtype V4L flags 0
+            device node name /dev/video9
+	pad0: Sink
+
+- entity 5: stream_cif_mipi_id1 (1 pad, 0 link)
+            type Node subtype V4L flags 0
+            device node name /dev/video10
+	pad0: Sink
+
+- entity 9: stream_cif_mipi_id2 (1 pad, 0 link)
+            type Node subtype V4L flags 0
+            device node name /dev/video11
+	pad0: Sink
+
+- entity 13: stream_cif_mipi_id3 (1 pad, 0 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video12
+	pad0: Sink
+
+- entity 17: rkcif_scale_ch0 (1 pad, 0 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video13
+	pad0: Sink
+
+- entity 21: rkcif_scale_ch1 (1 pad, 0 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video14
+	pad0: Sink
+
+- entity 25: rkcif_scale_ch2 (1 pad, 0 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video15
+	pad0: Sink
+
+- entity 29: rkcif_scale_ch3 (1 pad, 0 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video16
+	pad0: Sink
+
+- entity 33: rkcif_tools_id0 (1 pad, 0 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video17
+	pad0: Sink
+
+- entity 37: rkcif_tools_id1 (1 pad, 0 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video18
+	pad0: Sink
+
+- entity 41: rkcif_tools_id2 (1 pad, 0 link)
+             type Node subtype V4L flags 0
+             device node name /dev/video19
+	pad0: Sink
+
+- entity 45: rockchip-mipi-csi2 (12 pads, 1 link, 0 routes)
+             type V4L2 subdev subtype Unknown flags 0
+	pad0: Sink
+		<- "rockchip-csi2-dphy0":1 [ENABLED]
+	pad1: Source
+	pad2: Source
+	pad3: Source
+	pad4: Source
+	pad5: Source
+	pad6: Source
+	pad7: Source
+	pad8: Source
+	pad9: Source
+	pad10: Source
+	pad11: Source
+
+- entity 58: rockchip-csi2-dphy0 (2 pads, 2 links, 0 routes)
+             type V4L2 subdev subtype Unknown flags 0
+	pad0: Sink
+		<- "m00_b_ov13855 6-0036":0 [ENABLED]
+	pad1: Source
+		-> "rockchip-mipi-csi2":0 [ENABLED]
+
+- entity 63: m00_b_ov13855 6-0036 (1 pad, 1 link, 0 routes)
+             type V4L2 subdev subtype Sensor flags 0
+	pad0: Source
+		-> "rockchip-csi2-dphy0":0 [ENABLED]
+
+- entity 67: m00_b_dw9714 6-000c-1 (0 pad, 0 link, 0 routes)
+             type V4L2 subdev subtype Lens flags 0
+
+orangepi@orangepi5-max:~$

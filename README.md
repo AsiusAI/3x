@@ -64,9 +64,8 @@ sudo apt install camera-engine-rkaiq-rk3588
 ```
 git clone https://github.com/armbian/build && cd armbian-build
 
-./compile.sh BOARD=orangepi5-ultra RELEASE=noble BUILD_DESKTOP=yes DESKTOP_ENVIRONMENT=xfce DESKTOP_APPGROUPS_SELECTED='' DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base BRANCH=vendor NETWORKING_STACK="network-manager" PREFER_DOCKER=no KERNEL_CONFIGURE=no
-
-sudo dd if=output/images/Armbian-unofficial_25.11.0-trunk_Orangepi5-ultra_noble_vendor_6.1.115_xfce_desktop.img of=/dev/sda bs=4M status=progress conv=fsync
+./compile.sh BOARD=orangepi5-max RELEASE=noble BUILD_DESKTOP=yes DESKTOP_ENVIRONMENT=xfce DESKTOP_APPGROUPS_SELECTED='' DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base BRANCH=vendor NETWORKING_STACK="network-manager" PREFER_DOCKER=no KERNEL_CONFIGURE=no
+sudo dd if=output/images/Armbian-unofficial_25.11.0-trunk_Orangepi5-max_noble_vendor_6.1.115_xfce_desktop.img of=/dev/sda bs=4M status=progress conv=fsync
 ```
 
 
