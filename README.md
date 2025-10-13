@@ -81,7 +81,7 @@ device-tree/rockchip/overlay/orangepi-5-max-cam2.dtbo
 
 
 
-sudo ./build.sh --suite noble --flavor server --board orangepi-5-max
+sudo ./build.sh --suite noble --flavor desktop --board orangepi-5-max
 
 
 
@@ -200,3 +200,11 @@ wget https://github.com/rockchip-linux/rknpu2/raw/refs/heads/master/runtime/RK35
 python yolov8.py --model_path ../model/yolov8.rknn --target rk3588
 
 output: ~/rknn_model_zoo/examples/yolov8/result.png
+
+
+## Armbian camera support is broken
+
+see these issues:
+https://github.com/armbian/linux-rockchip/issues/164
+https://github.com/armbian/linux-rockchip/issues/246
+https://forum.radxa.com/t/dev-video-01/20490/42
