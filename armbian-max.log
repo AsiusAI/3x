@@ -1,3 +1,11 @@
+ARMBIAN:
+
+installed rkaiq like this:
+
+sudo add-apt-repository ppa:jjriek/rockchip-multimedia
+sudo apt update
+sudo apt install camera-engine-rkaiq-rk3588
+
 orangepi@orangepi5-max:~$ uname -a
 Linux orangepi5-max 6.1.115-vendor-rk35xx #1 SMP Fri Oct  3 09:48:39 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
 orangepi@orangepi5-max:~$ sudo cat /boot/armbianEnv.txt
@@ -569,4 +577,66 @@ Device topology
 - entity 67: m00_b_dw9714 6-000c-1 (0 pad, 0 link, 0 routes)
              type V4L2 subdev subtype Lens flags 0
 
-orangepi@orangepi5-max:~$
+orangepi@orangepi5-max:~$ systemctl status rkaiq_3A.service -n 100
+● rkaiq_3A.service - Rockchip AIQ 3A Server
+     Loaded: loaded (/etc/systemd/system/rkaiq_3A.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2025-10-12 16:12:16 UTC; 26ms ago
+   Main PID: 3400 (rkaiq_3A_server)
+      Tasks: 1 (limit: 18813)
+     Memory: 544.0K (peak: 544.0K)
+        CPU: 16ms
+     CGroup: /system.slice/rkaiq_3A.service
+
+Oct 12 16:12:16 orangepi5-max systemd[1]: rkaiq_3A.service: Scheduled restart job, restart counter is at 96.
+Oct 12 16:12:16 orangepi5-max systemd[1]: Started rkaiq_3A.service - Rockchip AIQ 3A Server.
+Oct 12 16:12:16 orangepi5-max rkaiq_3A_server[3400]: DBG: get rkisp-isp-subdev devname: /dev/v4l-subdev0
+Oct 12 16:12:16 orangepi5-max rkaiq_3A_server[3400]: DBG: get rkisp-input-params devname: /dev/video8
+Oct 12 16:12:16 orangepi5-max rkaiq_3A_server[3400]: DBG: get rkisp-statistics devname: /dev/video7
+Oct 12 16:12:16 orangepi5-max rkaiq_3A_server[3400]: DBG: get rkisp_mainpath devname: /dev/video0
+Oct 12 16:12:16 orangepi5-max rkaiq_3A_server[3400]: rkaiq log level ff1
+Oct 12 16:12:16 orangepi5-max systemd[1]: rkaiq_3A.service: Main process exited, code=killed, status=11/SEGV
+Oct 12 16:12:16 orangepi5-max systemd[1]: rkaiq_3A.service: Failed with result 'signal'.
+orangepi@orangepi5-max:~$ ls /usr/lib | grep rkaiq
+librkaiq.a
+librkaiq.so
+orangepi@orangepi5-max:~$ ls /usr/bin | grep rkaiq
+rkaiq_3A_server
+rkaiq_tool_server
+orangepi@orangepi5-max:~$ rkaiq_3A_server
+DBG: get rkisp-isp-subdev devname: /dev/v4l-subdev0
+DBG: get rkisp-input-params devname: /dev/video8
+DBG: get rkisp-statistics devname: /dev/video7
+DBG: get rkisp_mainpath devname: /dev/video0
+rkaiq log level ff1
+Segmentation fault
+orangepi@orangepi5-max:~$ ls -l /etc/iqfiles/ov13855_CMK-OT2016-FV1_default.json
+-rw-r--r-- 1 root root 361855 Apr  8  2024 /etc/iqfiles/ov13855_CMK-OT2016-FV1_default.json
+orangepi@orangepi5-max:~$ dmesg | grep csi2
+[    3.384932] platform csi2-dphy0: Fixed dependency cycle(s) with /mipi2-csi2
+[    3.384961] platform mipi2-csi2: Fixed dependency cycle(s) with /csi2-dphy0
+[    3.385110] platform mipi2-csi2: Fixed dependency cycle(s) with /rkcif-mipi-lvds2
+[    3.385134] platform rkcif-mipi-lvds2: Fixed dependency cycle(s) with /mipi2-csi2
+[    4.452636] rockchip-csi2-dphy-hw fedc0000.csi2-dphy0-hw: csi2 dphy hw probe successfully!
+[    4.452869] rockchip-csi2-dphy-hw fedc8000.csi2-dphy1-hw: csi2 dphy hw probe successfully!
+[   20.168280] platform csi2-dphy0: Fixed dependency cycle(s) with /i2c@fec80000/ov13850-0@10
+[   20.168349] i2c 6-0010: Fixed dependency cycle(s) with /csi2-dphy0
+[   20.168500] platform csi2-dphy0: Fixed dependency cycle(s) with /i2c@fec80000/ov13855-0@36
+[   20.168554] i2c 6-0036: Fixed dependency cycle(s) with /csi2-dphy0
+[   20.174543] rockchip-mipi-csi2-hw fdd10000.mipi0-csi2-hw: enter mipi csi2 hw probe!
+[   20.174650] rockchip-mipi-csi2-hw fdd10000.mipi0-csi2-hw: probe success, v4l2_dev:mipi0-csi2-hw!
+[   20.174688] rockchip-mipi-csi2-hw fdd20000.mipi1-csi2-hw: enter mipi csi2 hw probe!
+[   20.174766] rockchip-mipi-csi2-hw fdd20000.mipi1-csi2-hw: probe success, v4l2_dev:mipi1-csi2-hw!
+[   20.174800] rockchip-mipi-csi2-hw fdd30000.mipi2-csi2-hw: enter mipi csi2 hw probe!
+[   20.174873] rockchip-mipi-csi2-hw fdd30000.mipi2-csi2-hw: probe success, v4l2_dev:mipi2-csi2-hw!
+[   20.174905] rockchip-mipi-csi2-hw fdd40000.mipi3-csi2-hw: enter mipi csi2 hw probe!
+[   20.174982] rockchip-mipi-csi2-hw fdd40000.mipi3-csi2-hw: probe success, v4l2_dev:mipi3-csi2-hw!
+[   20.175012] rockchip-mipi-csi2-hw fdd50000.mipi4-csi2-hw: enter mipi csi2 hw probe!
+[   20.175088] rockchip-mipi-csi2-hw fdd50000.mipi4-csi2-hw: probe success, v4l2_dev:mipi4-csi2-hw!
+[   20.175119] rockchip-mipi-csi2-hw fdd60000.mipi5-csi2-hw: enter mipi csi2 hw probe!
+[   20.175194] rockchip-mipi-csi2-hw fdd60000.mipi5-csi2-hw: probe success, v4l2_dev:mipi5-csi2-hw!
+[   20.175578] rockchip-mipi-csi2 mipi2-csi2: attach to csi2 hw node
+[   20.175600] rockchip-mipi-csi2: probe success, v4l2_dev:(efault)!
+[   20.482798] rockchip-csi2-dphy csi2-dphy0: csi2 dphy0 probe successfully!
+[   21.001107] rkcif rkcif-mipi-lvds2: Entity type for entity rockchip-mipi-csi2 was not initialized!
+[   21.001125] rockchip-mipi-csi2: Async registered subdev
+[   21.001146] rockchip-csi2-dphy csi2-dphy0: dphy0 matches m00_b_ov13855 6-0036:bus type 5

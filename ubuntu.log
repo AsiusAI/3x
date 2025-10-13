@@ -1,3 +1,5 @@
+UBUNTU ROCKCHIP:
+
 ubuntu@ubuntu:~$ uname -a
 Linux ubuntu 6.1.0-1027-rockchip #27 SMP Sun Sep 14 14:59:25 EEST 2025 aarch64 aarch64 aarch64 GNU/Linux
 ubuntu@ubuntu:~$ sudo cat /etc/default/u-boot
@@ -733,4 +735,139 @@ Device topology
 		[stream:0 fmt:SBGGR10_1X10/4224x3136@10000/300000 field:none]
 		-> "rkisp-isp-subdev":0 [ENABLED]
 
+ubuntu@ubuntu:~$ systemctl status rkaiq_3A.service -n 100
+● rkaiq_3A.service - Enable Rockchip camera engine rkaiq
+     Loaded: loaded (/usr/lib/systemd/system/rkaiq_3A.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2025-10-12 10:00:00 UTC; 5h 17min ago
+    Process: 510 ExecStart=/etc/init.d/S40rkaiq_3A start (code=exited, status=0/SUCCESS)
+   Main PID: 516 (sh)
+      Tasks: 10 (limit: 19107)
+     Memory: 10.6M (peak: 11.4M)
+        CPU: 86ms
+     CGroup: /system.slice/rkaiq_3A.service
+             ├─516 /bin/sh -c "/usr/bin/rkaiq_3A_server 2>&1 | logger -t rkaiq_3A"
+             ├─517 /usr/bin/rkaiq_3A_server
+             └─518 logger -t rkaiq_3A
+
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: media get entity by name: rkisp-isp-subdev is null
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: media get entity by name: rkisp-input-params is null
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: media get entity by name: rkisp-statistics is null
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: media get entity by name: rkisp_mainpath is null
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: Cound not find rkisp dev names, skipped /dev/media0
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media0
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: DBG: get rkisp-isp-subdev devname: /dev/v4l-subdev3
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: DBG: get rkisp-input-params devname: /dev/video19
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: DBG: get rkisp-statistics devname: /dev/video18
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: DBG: get rkisp_mainpath devname: /dev/video11
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: rkaiq log level ff1
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: XCORE:K:rk_aiq_init_lib, ISP HW ver: 30
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]:
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ************************** VERSION INFOS **************************
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: version release date: 2024-03-03
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]:          AIQ:       AIQ v6.0x6.1
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ************************ VERSION INFOS END ************************
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media2
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media3
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media4
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media5
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media6
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media7
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media8
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media9
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media10
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media11
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media12
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media13
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media14
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: ERR: Bad media topology for: /dev/media15
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: XCORE:E:invalid main scene len!
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]:
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: CAMHW:E:failed to set hflip (val: 0)
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: IPCSERVER:K:cid[0] Process path:/tmp/UNIX.domain0, sockfd:16
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: XCORE:K:cid[0] rk_aiq_uapi_sysctl_init success. iq:/etc/iqfiles//ov13855_CMK-OT2016-FV1_default.json
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: CAMHW:E:failed to set hdr mode 0
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: XCORE:K:cid[0] rk_aiq_uapi_sysctl_prepare success. mode:0
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: DBG: subscribe events from /dev/video19 success !
+Oct 12 10:00:00 ubuntu rkaiq_3A[518]: DBG: /dev/media1: wait stream start event...
+ubuntu@ubuntu:~$ ls /usr/lib | grep rkaiq
+librkaiq.a
+librkaiq.so
+ubuntu@ubuntu:~$ ls /usr/bin | grep rkaiq
+rkaiq_3A_server
+rkaiq_tool_server
+ubuntu@ubuntu:~$ rkaiq_3A_server
+media get entity by name: rkisp-isp-subdev is null
+media get entity by name: rkisp-input-params is null
+media get entity by name: rkisp-statistics is null
+media get entity by name: rkisp_mainpath is null
+Cound not find rkisp dev names, skipped /dev/media0
+ERR: Bad media topology for: /dev/media0
+DBG: get rkisp-isp-subdev devname: /dev/v4l-subdev3
+DBG: get rkisp-input-params devname: /dev/video19
+DBG: get rkisp-statistics devname: /dev/video18
+DBG: get rkisp_mainpath devname: /dev/video11
+rkaiq log level ff1
+XCORE:K:rk_aiq_init_lib, ISP HW ver: 30
+
+************************** VERSION INFOS **************************
+version release date: 2024-03-03
+         AIQ:       AIQ v6.0x6.1
+************************ VERSION INFOS END ************************
+ERR: Bad media topology for: /dev/media2
+ERR: Bad media topology for: /dev/media3
+ERR: Bad media topology for: /dev/media4
+ERR: Bad media topology for: /dev/media5
+ERR: Bad media topology for: /dev/media6
+ERR: Bad media topology for: /dev/media7
+ERR: Bad media topology for: /dev/media8
+ERR: Bad media topology for: /dev/media9
+ERR: Bad media topology for: /dev/media10
+ERR: Bad media topology for: /dev/media11
+ERR: Bad media topology for: /dev/media12
+ERR: Bad media topology for: /dev/media13
+ERR: Bad media topology for: /dev/media14
+ERR: Bad media topology for: /dev/media15
+XCORE:E:invalid main scene len!
+
+CAMHW:E:failed to set hflip (val: 0)
+IPCSERVER:K:cid[0] Process path:/tmp/UNIX.domain0, sockfd:16
+XCORE:K:cid[0] rk_aiq_uapi_sysctl_init success. iq:/etc/iqfiles//ov13855_CMK-OT2016-FV1_default.json
+CAMHW:E:failed to set hdr mode 0
+XCORE:E:device(/dev/video19) start failed
+CAMHW:E:prepare isp params dev err: -9
+
+CAMHW:E:Can not get isp params buffer, queued cnts:0
+
+XCORE:K:cid[0] rk_aiq_uapi_sysctl_prepare success. mode:0
+DBG: subscribe events from /dev/video19 success !
+DBG: /dev/media1: wait stream start event...
+^C
+ubuntu@ubuntu:~$ ls -l /etc/iqfiles/ov13855_CMK-OT2016-FV1_default.json
+-rw-r--r-- 1 root root 361855 Apr  8  2024 /etc/iqfiles/ov13855_CMK-OT2016-FV1_default.json
+ubuntu@ubuntu:~$ dmesg | grep csi2
+[    5.462954] platform mipi2-csi2: Fixed dependency cycle(s) with /csi2-dphy0/ports/port@1/endpoint@0
+[    5.463133] platform rkcif-mipi-lvds2: Fixed dependency cycle(s) with /mipi2-csi2/ports/port@1/endpoint@0
+[    6.131112] rockchip-csi2-dphy-hw fedc0000.csi2-dphy0-hw: csi2 dphy hw probe successfully!
+[    6.131214] rockchip-csi2-dphy-hw fedc8000.csi2-dphy1-hw: csi2 dphy hw probe successfully!
+[   23.341537] i2c 6-0010: Fixed dependency cycle(s) with /csi2-dphy0/ports/port@0/endpoint@0
+[   23.343980] i2c 6-0036: Fixed dependency cycle(s) with /csi2-dphy0/ports/port@0/endpoint@1
+[   23.345237] i2c 6-001a: Fixed dependency cycle(s) with /csi2-dphy0/ports/port@0/endpoint@2
+[   23.384977] rockchip-mipi-csi2-hw fdd10000.mipi0-csi2-hw: enter mipi csi2 hw probe!
+[   23.386204] rockchip-mipi-csi2-hw fdd10000.mipi0-csi2-hw: probe success, v4l2_dev:mipi0-csi2-hw!
+[   23.387330] rockchip-mipi-csi2-hw fdd20000.mipi1-csi2-hw: enter mipi csi2 hw probe!
+[   23.388510] rockchip-mipi-csi2-hw fdd20000.mipi1-csi2-hw: probe success, v4l2_dev:mipi1-csi2-hw!
+[   23.389625] rockchip-mipi-csi2-hw fdd30000.mipi2-csi2-hw: enter mipi csi2 hw probe!
+[   23.390791] rockchip-mipi-csi2-hw fdd30000.mipi2-csi2-hw: probe success, v4l2_dev:mipi2-csi2-hw!
+[   23.391924] rockchip-mipi-csi2-hw fdd40000.mipi3-csi2-hw: enter mipi csi2 hw probe!
+[   23.393088] rockchip-mipi-csi2-hw fdd40000.mipi3-csi2-hw: probe success, v4l2_dev:mipi3-csi2-hw!
+[   23.394192] rockchip-mipi-csi2-hw fdd50000.mipi4-csi2-hw: enter mipi csi2 hw probe!
+[   23.395368] rockchip-mipi-csi2-hw fdd50000.mipi4-csi2-hw: probe success, v4l2_dev:mipi4-csi2-hw!
+[   23.396470] rockchip-mipi-csi2-hw fdd60000.mipi5-csi2-hw: enter mipi csi2 hw probe!
+[   23.397614] rockchip-mipi-csi2-hw fdd60000.mipi5-csi2-hw: probe success, v4l2_dev:mipi5-csi2-hw!
+[   23.399242] rockchip-mipi-csi2 mipi2-csi2: attach to csi2 hw node
+[   23.400332] rkcif rkcif-mipi-lvds2: Entity type for entity rockchip-mipi-csi2 was not initialized!
+[   23.401419] rockchip-mipi-csi2: Async registered subdev
+[   23.402507] rockchip-mipi-csi2: probe success, v4l2_dev:rkcif-mipi-lvds2!
+[   23.764284] rockchip-csi2-dphy csi2-dphy0: dphy0 matches m00_b_ov13855 6-0036:bus type 5
+[   23.765799] rockchip-csi2-dphy csi2-dphy0: csi2 dphy0 probe successfully!
 ubuntu@ubuntu:~$
